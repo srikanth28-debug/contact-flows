@@ -1,0 +1,75 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "35c5d4d8-4c97-4573-b9ae-5490b59f4499",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": 40,
+      "y": 40
+    },
+    "ActionMetadata": {
+      "66be1e9c-e210-47c6-918d-fdf70a1dd7de": {
+        "position": {
+          "x": 508.8,
+          "y": 140
+        }
+      },
+      "35c5d4d8-4c97-4573-b9ae-5490b59f4499": {
+        "position": {
+          "x": 207.2,
+          "y": 136.8
+        },
+        "parameters": {
+          "Messages": [
+            {
+              "PromptId": {
+                "displayName": "CustomerQueue.wav"
+              }
+            }
+          ]
+        },
+        "audio": [
+          {
+            "id": "arn:aws:connect:us-east-1:499761511710:instance/f57b95f5-bcb8-4bdf-b0c0-ee97d5da5336/prompt/480f09f6-64af-489e-9a24-7f30d6a3f0fc",
+            "text": "CustomerQueue.wav",
+            "type": "Prompt"
+          }
+        ]
+      }
+    },
+    "Annotations": [],
+    "name": "Callback_Queue",
+    "description": "Programmatically imported by import_flows.py",
+    "type": "customerQueue",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {},
+      "Identifier": "66be1e9c-e210-47c6-918d-fdf70a1dd7de",
+      "Type": "EndFlowExecution",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "Messages": [
+          {
+            "PromptId": "arn:aws:connect:us-east-1:499761511710:instance/f57b95f5-bcb8-4bdf-b0c0-ee97d5da5336/prompt/480f09f6-64af-489e-9a24-7f30d6a3f0fc"
+          }
+        ],
+        "ContinueMessagingDuringInterrupt": "false"
+      },
+      "Identifier": "35c5d4d8-4c97-4573-b9ae-5490b59f4499",
+      "Type": "MessageParticipantIteratively",
+      "Transitions": {
+        "NextAction": "66be1e9c-e210-47c6-918d-fdf70a1dd7de",
+        "Errors": [
+          {
+            "NextAction": "66be1e9c-e210-47c6-918d-fdf70a1dd7de",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ]
+}

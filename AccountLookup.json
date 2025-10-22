@@ -1,0 +1,1717 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "alu-cca-11",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": 16.8,
+      "y": 17.6
+    },
+    "ActionMetadata": {
+      "alu-cca-05": {
+        "position": {
+          "x": 1466.4,
+          "y": -77.6
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "1c12aa50-808d-4c86-aa43-647d7ec07b9b",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "true"
+          }
+        ]
+      },
+      "alu-sca-08-copy-1": {
+        "position": {
+          "x": 257.6,
+          "y": 1018.4
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "alu-sca-09-copy-1": {
+        "position": {
+          "x": 261.6,
+          "y": 1226.4
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "aba-ttf-04": {
+        "position": {
+          "x": 3620.8,
+          "y": 760.8
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "ContactFlowId": {
+            "displayName": "Transfer_To_Queue_EMS"
+          }
+        },
+        "ContactFlow": {
+          "text": "Transfer_To_Queue_EMS"
+        }
+      },
+      "aba-disconnect-01": {
+        "position": {
+          "x": 3980,
+          "y": 941.6
+        },
+        "isFriendlyName": true
+      },
+      "aba-sca-18": {
+        "position": {
+          "x": 3969.6,
+          "y": 701.6
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "aba-ttf-05": {
+        "position": {
+          "x": 3628.8,
+          "y": 956
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "ContactFlowId": {
+            "displayName": "Transfer_To_Queue"
+          }
+        },
+        "ContactFlow": {
+          "text": "Transfer_To_Queue"
+        }
+      },
+      "AWS Lambda Error": {
+        "position": {
+          "x": 3058.4,
+          "y": 559.2
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "alu-im-02": {
+        "position": {
+          "x": 2018.4,
+          "y": -152
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "FlowModuleId": {
+            "displayName": "AddFlowReturnInfoToStack"
+          }
+        },
+        "contactFlowModuleName": "AddFlowReturnInfoToStack"
+      },
+      "alu-im-01": {
+        "position": {
+          "x": 1744,
+          "y": 68.8
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "FlowModuleId": {
+            "displayName": "IncrementAuthAttemptsCounter"
+          }
+        },
+        "contactFlowModuleName": "IncrementAuthAttemptsCounter"
+      },
+      "alu-im-06": {
+        "position": {
+          "x": 1480.8,
+          "y": 1536
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "FlowModuleId": {
+            "displayName": "AddFlowReturnInfoToStack"
+          }
+        },
+        "contactFlowModuleName": "AddFlowReturnInfoToStack"
+      },
+      "alu-ttf-07": {
+        "position": {
+          "x": 878.4,
+          "y": -532
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "ContactFlowId": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "alu-ttf-06-copy-1": {
+        "position": {
+          "x": 522.4,
+          "y": 1193.6
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "ContactFlowId": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "alu-ttf-03": {
+        "position": {
+          "x": 1717.6,
+          "y": 909.6
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "ContactFlowId": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "to agent": {
+        "position": {
+          "x": 3335.2,
+          "y": 824.8
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "27958683-c1ad-4152-a628-58bcc38e3d0e",
+            "operator": {
+              "name": "Starts with",
+              "value": "StartsWith",
+              "shortDisplay": "starts with"
+            },
+            "value": "EMS"
+          }
+        ]
+      },
+      "alu-cca-03": {
+        "position": {
+          "x": 249.6,
+          "y": 775.2
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "dfaaf383-00de-48b9-9e3b-3200330e710d",
+            "operator": {
+              "name": "Is greater than",
+              "value": "GreaterThan",
+              "shortDisplay": ">"
+            },
+            "value": "0"
+          }
+        ]
+      },
+      "alu-cca-04": {
+        "position": {
+          "x": 1180.8,
+          "y": -81.6
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "cbfa084e-9e15-4544-b8f1-13a4e2c7e02a",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "Outage"
+          }
+        ]
+      },
+      "alu-sca-05": {
+        "position": {
+          "x": 1462.4,
+          "y": 896
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "alu-im-05": {
+        "position": {
+          "x": 1466.4,
+          "y": 1106.4
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "FlowModuleId": {
+            "displayName": "AddFlowReturnInfoToStack"
+          }
+        },
+        "contactFlowModuleName": "AddFlowReturnInfoToStack"
+      },
+      "alu-cca-02": {
+        "position": {
+          "x": 226.4,
+          "y": 496.8
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "cd77a720-7f5c-41b2-90d8-a7a9c0133891",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "Outage"
+          }
+        ]
+      },
+      "alu-sca-03": {
+        "position": {
+          "x": 922.4,
+          "y": -72.8
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "Attributes": {
+            "Error": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicParams": [
+          "Error"
+        ]
+      },
+      "6c2f824e-6d48-4171-a3cc-bd38bb7e7c1f": {
+        "position": {
+          "x": 219.2,
+          "y": -12
+        },
+        "parameters": {
+          "FlowModuleId": {
+            "displayName": "GetAuthentication"
+          }
+        },
+        "contactFlowModuleName": "GetAuthentication"
+      },
+      "alu-cca-01": {
+        "position": {
+          "x": 218.4,
+          "y": 230.4
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "b1cc6fff-f080-4730-9693-33ce330657f3",
+            "operator": {
+              "name": "Is greater than",
+              "value": "GreaterThan",
+              "shortDisplay": ">"
+            },
+            "value": "0"
+          }
+        ]
+      },
+      "Transfer Error": {
+        "position": {
+          "x": 3059.2,
+          "y": 1038.4
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "alu-ttf-06": {
+        "position": {
+          "x": 2693.6,
+          "y": 956
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "ContactFlowId": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "Invoke Module Error": {
+        "position": {
+          "x": 3058.4,
+          "y": 811.2
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "alu-sca-09": {
+        "position": {
+          "x": 2688.8,
+          "y": 714.4
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "alu-im-04": {
+        "position": {
+          "x": 1455.2,
+          "y": 531.2
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "FlowModuleId": {
+            "displayName": "AddFlowReturnInfoToStack"
+          }
+        },
+        "contactFlowModuleName": "AddFlowReturnInfoToStack"
+      },
+      "alu-cca-07": {
+        "position": {
+          "x": 1195.2,
+          "y": 538.4
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "5bf09b96-de18-42e0-8e27-8ac3cf177faf",
+            "operator": {
+              "name": "Is greater than",
+              "value": "GreaterThan",
+              "shortDisplay": ">"
+            },
+            "value": "$.Attributes.MaxAuthAttempts"
+          }
+        ]
+      },
+      "alu-im-03": {
+        "position": {
+          "x": 770.4,
+          "y": 507.2
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "FlowModuleId": {
+            "displayName": "IncrementAuthAttemptsCounter"
+          }
+        },
+        "contactFlowModuleName": "IncrementAuthAttemptsCounter"
+      },
+      "alu-cca-09": {
+        "position": {
+          "x": 1208,
+          "y": 1525.6
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "13679aba-8ca2-450e-87d1-39b8e7a522e7",
+            "operator": {
+              "name": "Is greater than",
+              "value": "GreaterThan",
+              "shortDisplay": ">"
+            },
+            "value": "$.Attributes.MaxAuthAttempts"
+          }
+        ]
+      },
+      "alu-cca-08": {
+        "position": {
+          "x": 1185.6,
+          "y": 954.4
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "b1aa3254-a85a-4a30-8e1c-d4f44c1ea0aa",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "2"
+          }
+        ]
+      },
+      "alu-cca-06": {
+        "position": {
+          "x": 784,
+          "y": 764.8
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "ec72bb7c-86ad-4752-840c-3fea965d2658",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "0"
+          },
+          {
+            "id": "424b47fa-e8ff-4799-90b7-8c1dd559b048",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "1"
+          },
+          {
+            "id": "a8089ae7-0e00-46ad-b0a4-2bc32105e3ba",
+            "operator": {
+              "name": "Is greater than",
+              "value": "GreaterThan",
+              "shortDisplay": ">"
+            },
+            "value": "1"
+          }
+        ]
+      },
+      "alu-im-07": {
+        "position": {
+          "x": 541.6,
+          "y": -544
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "FlowModuleId": {
+            "displayName": "GetFlowReturnInfoFromStack"
+          }
+        },
+        "contactFlowModuleName": "GetFlowReturnInfoFromStack"
+      },
+      "alu-sca-01": {
+        "position": {
+          "x": 208,
+          "y": -300
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "alu-cca-11": {
+        "position": {
+          "x": 196,
+          "y": -588
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "be1150cb-7cc3-42ef-9fe2-788ea09d4cb4",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "ALU:SecondLevelAuth"
+          },
+          {
+            "id": "33e96007-1611-4fdb-a3a5-29d8c9b0b9ba",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "ALU:AcctMultiMatch"
+          },
+          {
+            "id": "21e09ee5-a381-4dcb-9b0f-54210af30334",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "ALU:NoAuth"
+          }
+        ]
+      },
+      "alu-ttf-02": {
+        "position": {
+          "x": 2217.6,
+          "y": 575.2
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "ContactFlowId": {
+            "displayName": "Authentication"
+          }
+        },
+        "ContactFlow": {
+          "text": "Authentication"
+        }
+      },
+      "alu-lambda-04": {
+        "position": {
+          "x": 1723.2,
+          "y": 538.4
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "teco-lambda-get-flow-info-us-east-1-staging"
+          },
+          "LambdaInvocationAttributes": {
+            "callflow_name": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicMetadata": {
+          "callflow_name": true
+        }
+      },
+      "alu-cca-10": {
+        "position": {
+          "x": 1976.8,
+          "y": 545.6
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "alu-lambda-05": {
+        "position": {
+          "x": 1709.6,
+          "y": 1112
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "teco-lambda-get-flow-info-us-east-1-staging"
+          },
+          "LambdaInvocationAttributes": {
+            "callflow_name": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicMetadata": {
+          "callflow_name": true
+        }
+      },
+      "alu-ttf-04": {
+        "position": {
+          "x": 2189.6,
+          "y": 1133.6
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "ContactFlowId": {
+            "displayName": "SecondLevelAuthentication"
+          }
+        },
+        "ContactFlow": {
+          "text": "SecondLevelAuthentication"
+        }
+      },
+      "alu-sca-06": {
+        "position": {
+          "x": 1951.2,
+          "y": 1104.8
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "alu-lambda-03": {
+        "position": {
+          "x": 2023.2,
+          "y": 57.6
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "teco-lambda-get-flow-info-us-east-1-staging"
+          },
+          "LambdaInvocationAttributes": {
+            "callflow_name": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicMetadata": {
+          "callflow_name": true
+        }
+      },
+      "alu-ttf-01": {
+        "position": {
+          "x": 2263.2,
+          "y": 84.8
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "ContactFlowId": {
+            "displayName": "Authentication"
+          }
+        },
+        "ContactFlow": {
+          "text": "Authentication"
+        }
+      },
+      "alu-sca-04": {
+        "position": {
+          "x": 2260.8,
+          "y": -151.2
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "alu-lambda-06": {
+        "position": {
+          "x": 1712,
+          "y": 1550.4
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "teco-lambda-get-flow-info-us-east-1-staging"
+          },
+          "LambdaInvocationAttributes": {
+            "callflow_name": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicMetadata": {
+          "callflow_name": true
+        }
+      },
+      "alu-ttf-05": {
+        "position": {
+          "x": 2206.4,
+          "y": 1589.6
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "ContactFlowId": {
+            "displayName": "AccountMultipleMatches"
+          }
+        },
+        "ContactFlow": {
+          "text": "AccountMultipleMatches"
+        }
+      },
+      "alu-sca-07": {
+        "position": {
+          "x": 1944,
+          "y": 1553.6
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      }
+    },
+    "Annotations": [],
+    "name": "AccountLookup",
+    "description": "Programmatically imported by import_flows.py",
+    "type": "contactFlow",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {
+        "ComparisonValue": "$.External.ANILookup"
+      },
+      "Identifier": "alu-cca-05",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "alu-im-01",
+        "Conditions": [
+          {
+            "NextAction": "alu-im-02",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "true"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "alu-im-01",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "AccountFound": "true"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "alu-sca-08-copy-1",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "alu-ttf-06-copy-1",
+        "Errors": [
+          {
+            "NextAction": "alu-ttf-06-copy-1",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "AccountFound": "false"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "alu-sca-09-copy-1",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "alu-ttf-06-copy-1",
+        "Errors": [
+          {
+            "NextAction": "alu-ttf-06-copy-1",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ContactFlowId": "arn:aws:connect:us-east-1:499761511710:instance/f57b95f5-bcb8-4bdf-b0c0-ee97d5da5336/contact-flow/7b2729f0-e222-4ca5-80da-007f75f94326"
+      },
+      "Identifier": "aba-ttf-04",
+      "Type": "TransferToFlow",
+      "Transitions": {
+        "NextAction": "aba-sca-18",
+        "Errors": [
+          {
+            "NextAction": "aba-sca-18",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "aba-disconnect-01",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "ErrorCode": "9",
+          "ErrorMsg": "Transfer error"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "aba-sca-18",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "aba-disconnect-01",
+        "Errors": [
+          {
+            "NextAction": "aba-disconnect-01",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ContactFlowId": "arn:aws:connect:us-east-1:499761511710:instance/f57b95f5-bcb8-4bdf-b0c0-ee97d5da5336/contact-flow/95733b7c-0216-48ab-bce5-3da5a88e7830"
+      },
+      "Identifier": "aba-ttf-05",
+      "Type": "TransferToFlow",
+      "Transitions": {
+        "NextAction": "aba-sca-18",
+        "Errors": [
+          {
+            "NextAction": "aba-sca-18",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "ErrorCode": "1",
+          "ErrorMsg": "Lambda error",
+          "APIError": "$.External.statusCode"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "AWS Lambda Error",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "to agent",
+        "Errors": [
+          {
+            "NextAction": "to agent",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FlowModuleId": "2f602a22-02fa-46b0-b479-547e949936de"
+      },
+      "Identifier": "alu-im-02",
+      "Type": "InvokeFlowModule",
+      "Transitions": {
+        "NextAction": "alu-lambda-03",
+        "Errors": [
+          {
+            "NextAction": "Invoke Module Error",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FlowModuleId": "26f4b09b-bf4c-494a-a254-7ed59ce63056"
+      },
+      "Identifier": "alu-im-01",
+      "Type": "InvokeFlowModule",
+      "Transitions": {
+        "NextAction": "alu-im-02",
+        "Errors": [
+          {
+            "NextAction": "Invoke Module Error",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FlowModuleId": "2f602a22-02fa-46b0-b479-547e949936de"
+      },
+      "Identifier": "alu-im-06",
+      "Type": "InvokeFlowModule",
+      "Transitions": {
+        "NextAction": "alu-lambda-06",
+        "Errors": [
+          {
+            "NextAction": "Invoke Module Error",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ContactFlowId": "$.Attributes.ReturnFlowArn"
+      },
+      "Identifier": "alu-ttf-07",
+      "Type": "TransferToFlow",
+      "Transitions": {
+        "NextAction": "Transfer Error",
+        "Errors": [
+          {
+            "NextAction": "Transfer Error",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ContactFlowId": "$.Attributes.ReturnFlowArn"
+      },
+      "Identifier": "alu-ttf-06-copy-1",
+      "Type": "TransferToFlow",
+      "Transitions": {
+        "NextAction": "Transfer Error",
+        "Errors": [
+          {
+            "NextAction": "Transfer Error",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ContactFlowId": "$.Attributes.ReturnFlowArn"
+      },
+      "Identifier": "alu-ttf-03",
+      "Type": "TransferToFlow",
+      "Transitions": {
+        "NextAction": "Transfer Error",
+        "Errors": [
+          {
+            "NextAction": "Transfer Error",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.call_type"
+      },
+      "Identifier": "to agent",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "aba-ttf-05",
+        "Conditions": [
+          {
+            "NextAction": "aba-ttf-04",
+            "Condition": {
+              "Operator": "TextStartsWith",
+              "Operands": [
+                "EMS"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "aba-ttf-05",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.record_match_count"
+      },
+      "Identifier": "alu-cca-03",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "alu-sca-09-copy-1",
+        "Conditions": [
+          {
+            "NextAction": "alu-sca-08-copy-1",
+            "Condition": {
+              "Operator": "NumberGreaterThan",
+              "Operands": [
+                "0"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "alu-sca-09-copy-1",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.External.call_type"
+      },
+      "Identifier": "alu-cca-04",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "alu-cca-05",
+        "Conditions": [
+          {
+            "NextAction": "alu-sca-09",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "Outage"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "alu-cca-05",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "AccountFound": "true"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "alu-sca-05",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "alu-ttf-03",
+        "Errors": [
+          {
+            "NextAction": "alu-ttf-03",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FlowModuleId": "2f602a22-02fa-46b0-b479-547e949936de"
+      },
+      "Identifier": "alu-im-05",
+      "Type": "InvokeFlowModule",
+      "Transitions": {
+        "NextAction": "alu-lambda-05",
+        "Errors": [
+          {
+            "NextAction": "Invoke Module Error",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.External.call_type"
+      },
+      "Identifier": "alu-cca-02",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "alu-im-03",
+        "Conditions": [
+          {
+            "NextAction": "alu-cca-03",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "Outage"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "alu-im-03",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "Error": "$.External.statusCode"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "alu-sca-03",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "alu-cca-04",
+        "Errors": [
+          {
+            "NextAction": "alu-cca-04",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FlowModuleId": "fee895f2-c765-4130-9b63-951d56f9ea0e"
+      },
+      "Identifier": "6c2f824e-6d48-4171-a3cc-bd38bb7e7c1f",
+      "Type": "InvokeFlowModule",
+      "Transitions": {
+        "NextAction": "alu-cca-01",
+        "Errors": [
+          {
+            "NextAction": "Invoke Module Error",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.External.ErrorCode"
+      },
+      "Identifier": "alu-cca-01",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "alu-cca-02",
+        "Conditions": [
+          {
+            "NextAction": "alu-sca-03",
+            "Condition": {
+              "Operator": "NumberGreaterThan",
+              "Operands": [
+                "0"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "alu-cca-02",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "ErrorCode": "9",
+          "ErrorMsg": "Transfer error"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "Transfer Error",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "to agent",
+        "Errors": [
+          {
+            "NextAction": "to agent",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ContactFlowId": "$.Attributes.ReturnFlowArn"
+      },
+      "Identifier": "alu-ttf-06",
+      "Type": "TransferToFlow",
+      "Transitions": {
+        "NextAction": "Transfer Error",
+        "Errors": [
+          {
+            "NextAction": "Transfer Error",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "ErrorCode": "7",
+          "ErrorMsg": "Invoke Module"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "Invoke Module Error",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "to agent",
+        "Errors": [
+          {
+            "NextAction": "to agent",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "AccountFound": "false"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "alu-sca-09",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "alu-ttf-06",
+        "Errors": [
+          {
+            "NextAction": "alu-ttf-06",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FlowModuleId": "2f602a22-02fa-46b0-b479-547e949936de"
+      },
+      "Identifier": "alu-im-04",
+      "Type": "InvokeFlowModule",
+      "Transitions": {
+        "NextAction": "alu-lambda-04",
+        "Errors": [
+          {
+            "NextAction": "Invoke Module Error",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.AuthAttempts"
+      },
+      "Identifier": "alu-cca-07",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "alu-im-04",
+        "Conditions": [
+          {
+            "NextAction": "alu-sca-09",
+            "Condition": {
+              "Operator": "NumberGreaterThan",
+              "Operands": [
+                "$.Attributes.MaxAuthAttempts"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "alu-im-04",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FlowModuleId": "26f4b09b-bf4c-494a-a254-7ed59ce63056"
+      },
+      "Identifier": "alu-im-03",
+      "Type": "InvokeFlowModule",
+      "Transitions": {
+        "NextAction": "alu-cca-06",
+        "Errors": [
+          {
+            "NextAction": "Invoke Module Error",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.AuthAttempts"
+      },
+      "Identifier": "alu-cca-09",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "alu-im-06",
+        "Conditions": [
+          {
+            "NextAction": "alu-sca-09",
+            "Condition": {
+              "Operator": "NumberGreaterThan",
+              "Operands": [
+                "$.Attributes.MaxAuthAttempts"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "alu-im-06",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.AuthLevel"
+      },
+      "Identifier": "alu-cca-08",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "alu-im-05",
+        "Conditions": [
+          {
+            "NextAction": "alu-sca-05",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "alu-im-05",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.record_match_count"
+      },
+      "Identifier": "alu-cca-06",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "alu-cca-09",
+        "Conditions": [
+          {
+            "NextAction": "alu-sca-09",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "0"
+              ]
+            }
+          },
+          {
+            "NextAction": "alu-cca-08",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "1"
+              ]
+            }
+          },
+          {
+            "NextAction": "alu-cca-09",
+            "Condition": {
+              "Operator": "NumberGreaterThan",
+              "Operands": [
+                "1"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "alu-cca-09",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FlowModuleId": "627e5206-753a-4b0e-9fc2-d4bbb38f296e"
+      },
+      "Identifier": "alu-im-07",
+      "Type": "InvokeFlowModule",
+      "Transitions": {
+        "NextAction": "alu-ttf-07",
+        "Errors": [
+          {
+            "NextAction": "Invoke Module Error",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "callflow_name": "AccountLookup",
+          "MaxAuthAttempts": "3"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "alu-sca-01",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "6c2f824e-6d48-4171-a3cc-bd38bb7e7c1f",
+        "Errors": [
+          {
+            "NextAction": "6c2f824e-6d48-4171-a3cc-bd38bb7e7c1f",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.ReturnPoint"
+      },
+      "Identifier": "alu-cca-11",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "alu-sca-01",
+        "Conditions": [
+          {
+            "NextAction": "alu-im-07",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ALU:SecondLevelAuth"
+              ]
+            }
+          },
+          {
+            "NextAction": "alu-im-07",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ALU:AcctMultiMatch"
+              ]
+            }
+          },
+          {
+            "NextAction": "alu-im-07",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ALU:NoAuth"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "alu-sca-01",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ContactFlowId": "arn:aws:connect:us-east-1:499761511710:instance/f57b95f5-bcb8-4bdf-b0c0-ee97d5da5336/contact-flow/6769b782-ee9e-4836-bf96-667043943d96"
+      },
+      "Identifier": "alu-ttf-02",
+      "Type": "TransferToFlow",
+      "Transitions": {
+        "NextAction": "Transfer Error",
+        "Errors": [
+          {
+            "NextAction": "Transfer Error",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:499761511710:function:teco-lambda-get-flow-info-us-east-1-staging",
+        "InvocationTimeLimitSeconds": "3",
+        "InvocationType": "SYNCHRONOUS",
+        "LambdaInvocationAttributes": {
+          "callflow_name": "$.Attributes.callflow_name"
+        },
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "alu-lambda-04",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "alu-cca-10",
+        "Errors": [
+          {
+            "NextAction": "AWS Lambda Error",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "ReturnFlowArn": "$.External.Arn",
+          "ReturnPoint": "Auth:NoAuth"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "alu-cca-10",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "alu-ttf-02",
+        "Errors": [
+          {
+            "NextAction": "alu-ttf-02",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:499761511710:function:teco-lambda-get-flow-info-us-east-1-staging",
+        "InvocationTimeLimitSeconds": "3",
+        "InvocationType": "SYNCHRONOUS",
+        "LambdaInvocationAttributes": {
+          "callflow_name": "$.Attributes.callflow_name"
+        },
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "alu-lambda-05",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "alu-sca-06",
+        "Errors": [
+          {
+            "NextAction": "AWS Lambda Error",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ContactFlowId": "arn:aws:connect:us-east-1:499761511710:instance/f57b95f5-bcb8-4bdf-b0c0-ee97d5da5336/contact-flow/654ba3f7-2aba-4cca-b20a-f2b172a9f571"
+      },
+      "Identifier": "alu-ttf-04",
+      "Type": "TransferToFlow",
+      "Transitions": {
+        "NextAction": "Transfer Error",
+        "Errors": [
+          {
+            "NextAction": "Transfer Error",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "ReturnFlowArn": "$.External.Arn",
+          "ReturnPoint": "ALU:SecondLevelAuth"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "alu-sca-06",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "alu-ttf-04",
+        "Errors": [
+          {
+            "NextAction": "alu-ttf-04",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:499761511710:function:teco-lambda-get-flow-info-us-east-1-staging",
+        "InvocationTimeLimitSeconds": "3",
+        "InvocationType": "SYNCHRONOUS",
+        "LambdaInvocationAttributes": {
+          "callflow_name": "$.Attributes.callflow_name"
+        },
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "alu-lambda-03",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "alu-sca-04",
+        "Errors": [
+          {
+            "NextAction": "AWS Lambda Error",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ContactFlowId": "arn:aws:connect:us-east-1:499761511710:instance/f57b95f5-bcb8-4bdf-b0c0-ee97d5da5336/contact-flow/6769b782-ee9e-4836-bf96-667043943d96"
+      },
+      "Identifier": "alu-ttf-01",
+      "Type": "TransferToFlow",
+      "Transitions": {
+        "NextAction": "Transfer Error",
+        "Errors": [
+          {
+            "NextAction": "Transfer Error",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "ReturnFlowArn": "$.External.Arn",
+          "ReturnPoint": "Auth:NoAuth"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "alu-sca-04",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "alu-ttf-01",
+        "Errors": [
+          {
+            "NextAction": "alu-ttf-01",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:499761511710:function:teco-lambda-get-flow-info-us-east-1-staging",
+        "InvocationTimeLimitSeconds": "3",
+        "InvocationType": "SYNCHRONOUS",
+        "LambdaInvocationAttributes": {
+          "callflow_name": "$.Attributes.callflow_name"
+        },
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "alu-lambda-06",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "alu-sca-07",
+        "Errors": [
+          {
+            "NextAction": "AWS Lambda Error",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ContactFlowId": "arn:aws:connect:us-east-1:499761511710:instance/f57b95f5-bcb8-4bdf-b0c0-ee97d5da5336/contact-flow/be8d6680-5823-4efe-938d-65c2249e392f"
+      },
+      "Identifier": "alu-ttf-05",
+      "Type": "TransferToFlow",
+      "Transitions": {
+        "NextAction": "Transfer Error",
+        "Errors": [
+          {
+            "NextAction": "Transfer Error",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "ReturnFlowArn": "$.External.Arn",
+          "ReturnPoint": "ALU:AcctMultiMatch"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "alu-sca-07",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "alu-ttf-05",
+        "Errors": [
+          {
+            "NextAction": "alu-ttf-05",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ]
+}

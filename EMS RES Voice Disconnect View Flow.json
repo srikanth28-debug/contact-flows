@@ -1,0 +1,355 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "ems-slb-01",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": 39.2,
+      "y": 66.4
+    },
+    "ActionMetadata": {
+      "ems-slb-01": {
+        "position": {
+          "x": 202.4,
+          "y": 12
+        },
+        "isFriendlyName": true
+      },
+      "ems-sv-01": {
+        "position": {
+          "x": 484,
+          "y": -6.4
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "ViewResource": {
+            "Id": {
+              "displayName": "EMS Voice After Call Work"
+            }
+          },
+          "InvocationTimeLimitSeconds": {
+            "unit": 60
+          },
+          "ViewData": {
+            "wrap_up_code_dropdown": {
+              "useJson": true
+            }
+          }
+        }
+      },
+      "ems-ef-01": {
+        "position": {
+          "x": 1543.2,
+          "y": 144
+        },
+        "isFriendlyName": true
+      },
+      "e9ac4cd5-bb15-4fd4-b078-fb11adcf1541": {
+        "position": {
+          "x": 799.2,
+          "y": -108
+        },
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "teco-lambda-wrap-up-code-us-east-1-staging"
+          },
+          "LambdaInvocationAttributes": {
+            "wrap_up_code": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicMetadata": {
+          "wrap_up_code": true
+        }
+      },
+      "ems-sca-01": {
+        "position": {
+          "x": 1113.6,
+          "y": -108.8
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "Attributes": {
+            "WrapUpCode": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicParams": [
+          "WrapUpCode"
+        ]
+      }
+    },
+    "Annotations": [],
+    "name": "EMS RES Voice Disconnect View Flow",
+    "description": "Programmatically imported by import_flows.py",
+    "type": "contactFlow",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {
+        "FlowLoggingBehavior": "Enabled"
+      },
+      "Identifier": "ems-slb-01",
+      "Type": "UpdateFlowLoggingBehavior",
+      "Transitions": {
+        "NextAction": "ems-sv-01"
+      }
+    },
+    {
+      "Parameters": {
+        "ViewResource": {
+          "Id": "arn:aws:connect:us-east-1:499761511710:instance/f57b95f5-bcb8-4bdf-b0c0-ee97d5da5336/view/75231a39-501f-472b-8155-80f47bfd4c9e"
+        },
+        "InvocationTimeLimitSeconds": "120",
+        "ViewData": {
+          "wrap_up_code_dropdown": {
+            "Options": [
+              {
+                "Label": "Attic Inspection",
+                "Value": "Attic Inspection"
+              },
+              {
+                "Label": "Audit Request",
+                "Value": "Audit Request"
+              },
+              {
+                "Label": "Canceled Appointment",
+                "Value": "Canceled Appointment"
+              },
+              {
+                "Label": "Ceiling Insulation",
+                "Value": "Ceiling Insulation"
+              },
+              {
+                "Label": "Commercial Audit",
+                "Value": "Commercial Audit"
+              },
+              {
+                "Label": "Commercial Solar",
+                "Value": "Commercial Solar"
+              },
+              {
+                "Label": "Complaints",
+                "Value": "Complaints"
+              },
+              {
+                "Label": "Duct Seal",
+                "Value": "Duct Seal"
+              },
+              {
+                "Label": "Energy Audit Appt Phone Audit",
+                "Value": "Energy Audit Appt Phone Audit"
+              },
+              {
+                "Label": "Energy Audit Appt Scheduled",
+                "Value": "Energy Audit Appt Scheduled"
+              },
+              {
+                "Label": "Energy Audit Information",
+                "Value": "Energy Audit Information"
+              },
+              {
+                "Label": "Energy Star Certified Homes",
+                "Value": "Energy Star Certified Homes"
+              },
+              {
+                "Label": "Energy Star Thermostat",
+                "Value": "Energy Star Thermostat"
+              },
+              {
+                "Label": "EP Billing",
+                "Value": "EP Billing"
+              },
+              {
+                "Label": "EP Information",
+                "Value": "EP Information"
+              },
+              {
+                "Label": "EP Move In",
+                "Value": "EP Move In"
+              },
+              {
+                "Label": "EP Move Out",
+                "Value": "EP Move Out"
+              },
+              {
+                "Label": "EP Technical",
+                "Value": "EP Technical"
+              },
+              {
+                "Label": "Escalation",
+                "Value": "Escalation"
+              },
+              {
+                "Label": "Heating & Cooling",
+                "Value": "Heating & Cooling"
+              },
+              {
+                "Label": "High Bill",
+                "Value": "High Bill"
+              },
+              {
+                "Label": "Misdirected Call",
+                "Value": "Misdirected Call"
+              },
+              {
+                "Label": "PRIME Time Plus",
+                "Value": "PRIME Time Plus"
+              },
+              {
+                "Label": "PV TECO Response",
+                "Value": "PV TECO Response"
+              },
+              {
+                "Label": "Rebate Progress Request",
+                "Value": "Rebate Progress Request"
+              },
+              {
+                "Label": "Scam",
+                "Value": "Scam"
+              },
+              {
+                "Label": "Scam Call - Both",
+                "Value": "Scam Call - Both"
+              },
+              {
+                "Label": "Solar Billing",
+                "Value": "Solar Billing"
+              },
+              {
+                "Label": "Solar Contractor Inquiry",
+                "Value": "Solar Contractor Inquiry"
+              },
+              {
+                "Label": "Solar Information",
+                "Value": "Solar Information"
+              },
+              {
+                "Label": "Sun Select",
+                "Value": "Sun Select"
+              },
+              {
+                "Label": "Sun to Go",
+                "Value": "Sun to Go"
+              },
+              {
+                "Label": "transfer",
+                "Value": "transfer"
+              },
+              {
+                "Label": "transfer in error",
+                "Value": "transfer in error"
+              },
+              {
+                "Label": "Zap Cap Billing",
+                "Value": "Zap Cap Billing"
+              },
+              {
+                "Label": "Zap Cap Commercial",
+                "Value": "Zap Cap Commercial"
+              },
+              {
+                "Label": "Zap Cap Inspection/Light",
+                "Value": "Zap Cap Inspection/Light"
+              },
+              {
+                "Label": "Zap Cap Inquiry",
+                "Value": "Zap Cap Inquiry"
+              },
+              {
+                "Label": "Zap Cap Removal",
+                "Value": "Zap Cap Removal"
+              },
+              {
+                "Label": "Zap Cap Sales",
+                "Value": "Zap Cap Sales"
+              }
+            ]
+          }
+        }
+      },
+      "Identifier": "ems-sv-01",
+      "Type": "ShowView",
+      "Transitions": {
+        "NextAction": "ems-ef-01",
+        "Conditions": [
+          {
+            "NextAction": "e9ac4cd5-bb15-4fd4-b078-fb11adcf1541",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "Submit"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "ems-ef-01",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "ems-ef-01",
+            "ErrorType": "NoMatchingError"
+          },
+          {
+            "NextAction": "ems-ef-01",
+            "ErrorType": "TimeLimitExceeded"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "ems-ef-01",
+      "Type": "EndFlowExecution",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:499761511710:function:teco-lambda-wrap-up-code-us-east-1-staging",
+        "InvocationTimeLimitSeconds": "8",
+        "InvocationType": "SYNCHRONOUS",
+        "LambdaInvocationAttributes": {
+          "wrap_up_code": "$.Views.ViewResultData"
+        },
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "e9ac4cd5-bb15-4fd4-b078-fb11adcf1541",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "ems-sca-01",
+        "Errors": [
+          {
+            "NextAction": "ems-sca-01",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "WrapUpCode": "$.External.wrap_up_codes"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "ems-sca-01",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "ems-ef-01",
+        "Errors": [
+          {
+            "NextAction": "ems-ef-01",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ]
+}

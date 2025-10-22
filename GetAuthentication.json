@@ -1,0 +1,2380 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "cia-cca-01",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": 40,
+      "y": 40
+    },
+    "ActionMetadata": {
+      "cia-return-01": {
+        "position": {
+          "x": 2500,
+          "y": 1350.4
+        },
+        "isFriendlyName": true
+      },
+      "cia-sca-06": {
+        "position": {
+          "x": 1184.8,
+          "y": 1090.4
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "4f5692fd-2179-41df-be4f-35c2f2e5fa57": {
+        "position": {
+          "x": 923.2,
+          "y": 1148
+        },
+        "dynamicParams": []
+      },
+      "cia-cca-08": {
+        "position": {
+          "x": 681.6,
+          "y": 1088
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "78836188-2321-40a8-a764-99f2cb76b749",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "$.System.null"
+          },
+          {
+            "id": "8b5c7fe0-7df5-4f60-a73f-65b36c4065de",
+            "operator": {
+              "name": "Ends with",
+              "value": "EndsWith",
+              "shortDisplay": "ends with"
+            },
+            "value": "$.Attributes.entered_drivers_license_number"
+          },
+          {
+            "id": "06d36b19-6cb1-4bbc-aa01-1373fa2b6186",
+            "operator": {
+              "name": "Ends with",
+              "value": "EndsWith",
+              "shortDisplay": "ends with"
+            },
+            "value": "$.Attributes.entered_auth_data"
+          }
+        ]
+      },
+      "cia-cca-13": {
+        "position": {
+          "x": 708.8,
+          "y": 2579.2
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "aa87c6ae-04fa-44fd-b8bb-9a33e7184b1f",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "$.System.null"
+          },
+          {
+            "id": "72b492f6-b39a-41b6-b3f6-416fc2a05e3f",
+            "operator": {
+              "name": "Contains",
+              "value": "Contains",
+              "shortDisplay": "contains"
+            },
+            "value": "$.Attributes.entered_house_number"
+          },
+          {
+            "id": "442e3f63-e2eb-4acd-a6b4-a3bdf8bc0b6a",
+            "operator": {
+              "name": "Contains",
+              "value": "Contains",
+              "shortDisplay": "contains"
+            },
+            "value": "$.Attributes.entered_auth_data"
+          }
+        ]
+      },
+      "7c00228e-ae9d-4409-bdb2-1eb13988ab69": {
+        "position": {
+          "x": 953.6,
+          "y": 2644
+        },
+        "dynamicParams": []
+      },
+      "cia-sca-11": {
+        "position": {
+          "x": 1214.4,
+          "y": 2551.2
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "0601ec8a-967f-4f25-90d9-3b487b5b51ec": {
+        "position": {
+          "x": 943.2,
+          "y": 2339.2
+        },
+        "dynamicParams": []
+      },
+      "cia-cca-12": {
+        "position": {
+          "x": 706.4,
+          "y": 2269.6
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "2a6cb60a-ff1d-4c05-9b22-20163a051417",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "$.System.null"
+          },
+          {
+            "id": "b38b54ca-5138-4e60-b3ab-4f1cf35a33b7",
+            "operator": {
+              "name": "Contains",
+              "value": "Contains",
+              "shortDisplay": "contains"
+            },
+            "value": "$.Attributes.entered_phone_number"
+          },
+          {
+            "id": "02acc18f-2f98-4b58-8953-da467d8db9da",
+            "operator": {
+              "name": "Contains",
+              "value": "Contains",
+              "shortDisplay": "contains"
+            },
+            "value": "$.Attributes.entered_auth_data"
+          }
+        ]
+      },
+      "cia-sca-10": {
+        "position": {
+          "x": 1208.8,
+          "y": 2260.8
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "5a1d3c3c-a00a-4390-a749-7f400adf809e": {
+        "position": {
+          "x": 952,
+          "y": 2036
+        },
+        "dynamicParams": []
+      },
+      "cia-cca-11": {
+        "position": {
+          "x": 700.8,
+          "y": 1969.6
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "9a0f83a3-4b97-4dcd-a0c5-f6aeb4c5aa79",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "$.System.null"
+          },
+          {
+            "id": "8b651ae4-4dbc-4c28-bade-20298ab63b5c",
+            "operator": {
+              "name": "Ends with",
+              "value": "EndsWith",
+              "shortDisplay": "ends with"
+            },
+            "value": "$.Attributes.entered_taxpayer_id_number"
+          },
+          {
+            "id": "4fd17a27-afc2-4190-a422-b00dceeb8718",
+            "operator": {
+              "name": "Ends with",
+              "value": "EndsWith",
+              "shortDisplay": "ends with"
+            },
+            "value": "$.Attributes.entered_auth_data"
+          }
+        ]
+      },
+      "cia-sca-09": {
+        "position": {
+          "x": 1209.6,
+          "y": 1941.6
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "cia-cca-10": {
+        "position": {
+          "x": 695.2,
+          "y": 1670.4
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "29a92568-c77b-407f-b12e-3116c9ff726e",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "$.System.null"
+          },
+          {
+            "id": "a773947c-4571-41ae-8565-ffc4f1195015",
+            "operator": {
+              "name": "Ends with",
+              "value": "EndsWith",
+              "shortDisplay": "ends with"
+            },
+            "value": "$.Attributes.entered_visa_number"
+          },
+          {
+            "id": "89422fba-a125-49d5-9b26-279564f40d4a",
+            "operator": {
+              "name": "Ends with",
+              "value": "EndsWith",
+              "shortDisplay": "ends with"
+            },
+            "value": "$.Attributes.entered_auth_data"
+          }
+        ]
+      },
+      "cia-sca-08": {
+        "position": {
+          "x": 1202.4,
+          "y": 1670.4
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "17be3687-9afd-4b22-a6ca-eb1af94cc86b": {
+        "position": {
+          "x": 942.4,
+          "y": 1732
+        },
+        "dynamicParams": []
+      },
+      "3714c6dd-891c-4a18-97fc-295bea6bfade": {
+        "position": {
+          "x": 939.2,
+          "y": 1445.6
+        },
+        "dynamicParams": []
+      },
+      "cia-cca-09": {
+        "position": {
+          "x": 688.8,
+          "y": 1376.8
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "b9a4c321-a98f-4a52-9021-f60d6aaa26d5",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "$.System.null"
+          },
+          {
+            "id": "19912ea1-03be-4e06-b504-15e1bdfbf81f",
+            "operator": {
+              "name": "Ends with",
+              "value": "EndsWith",
+              "shortDisplay": "ends with"
+            },
+            "value": "$.Attributes.entered_passport_number"
+          },
+          {
+            "id": "4f0d395e-3ebe-47a5-92e3-c41737ef7fd4",
+            "operator": {
+              "name": "Ends with",
+              "value": "EndsWith",
+              "shortDisplay": "ends with"
+            },
+            "value": "$.Attributes.entered_auth_data"
+          }
+        ]
+      },
+      "cia-sca-07": {
+        "position": {
+          "x": 1193.6,
+          "y": 1373.6
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "dcdbe3bf-0f49-479e-b22a-7f44e1d91f01": {
+        "position": {
+          "x": 923.2,
+          "y": 873.6
+        },
+        "dynamicParams": []
+      },
+      "cia-cca-07": {
+        "position": {
+          "x": 675.2,
+          "y": 803.2
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "aa378a28-8b44-48f6-b3bb-d47a884bbb49",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "$.System.null"
+          },
+          {
+            "id": "4ce763b9-c044-4aae-af88-fc7c1ed00f08",
+            "operator": {
+              "name": "Ends with",
+              "value": "EndsWith",
+              "shortDisplay": "ends with"
+            },
+            "value": "$.Attributes.entered_social_security_number"
+          },
+          {
+            "id": "0bf7358a-ff1e-431d-afbe-abbcb551a954",
+            "operator": {
+              "name": "Ends with",
+              "value": "EndsWith",
+              "shortDisplay": "ends with"
+            },
+            "value": "$.Attributes.entered_auth_data"
+          }
+        ]
+      },
+      "cia-sca-05": {
+        "position": {
+          "x": 1176.8,
+          "y": 805.6
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "cia-cca-05": {
+        "position": {
+          "x": 668,
+          "y": 229.6
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "e16c71a1-d91f-465a-8e72-e75174012b44",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "$.System.null"
+          },
+          {
+            "id": "00f842e5-055a-489c-bbdc-4535f7443a55",
+            "operator": {
+              "name": "Contains",
+              "value": "Contains",
+              "shortDisplay": "contains"
+            },
+            "value": "$.Attributes.entered_account_number"
+          },
+          {
+            "id": "d41acad4-a2c9-460f-ae21-ea975fe62a94",
+            "operator": {
+              "name": "Contains",
+              "value": "Contains",
+              "shortDisplay": "contains"
+            },
+            "value": "$.Attributes.entered_auth_data"
+          }
+        ]
+      },
+      "0b9355fc-02ef-4dd0-9ba1-1604f7aa0f28": {
+        "position": {
+          "x": 927.2,
+          "y": 292.8
+        },
+        "dynamicParams": []
+      },
+      "cia-sca-03": {
+        "position": {
+          "x": 1159.2,
+          "y": 226.4
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "8b1613d2-395e-45fb-953d-3c51264b2f2c": {
+        "position": {
+          "x": 913.6,
+          "y": -7.2
+        },
+        "dynamicParams": []
+      },
+      "cia-sca-02": {
+        "position": {
+          "x": 1156.8,
+          "y": -76
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "AWS Lambda Timeout Error": {
+        "position": {
+          "x": 1685.6,
+          "y": 1143.2
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "f9066d19-0422-4bf1-9c9d-8e37c6c2784f": {
+        "position": {
+          "x": 451.2,
+          "y": -694.4
+        },
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "5ab9c954-ae26-48ee-8085-be9dc6c71021",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "+15125075167"
+          }
+        ]
+      },
+      "cia-sca-01-copy-1": {
+        "position": {
+          "x": 272.8,
+          "y": 3106.4
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "cia-cca-03": {
+        "position": {
+          "x": 280,
+          "y": 3346.4
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "6a1cc397-f2fe-44c4-9499-8d396a864c47",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "0"
+          },
+          {
+            "id": "d9cec70d-af7d-4db3-ac78-0b7e49321e85",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "1"
+          }
+        ]
+      },
+      "b81b8767-43d3-422a-b44d-0ecb7141bb51": {
+        "position": {
+          "x": 932.8,
+          "y": 568.8
+        },
+        "dynamicParams": []
+      },
+      "cia-cca-06": {
+        "position": {
+          "x": 670.4,
+          "y": 501.6
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "3ae0cb4a-2a69-46bd-89d6-cd41725bf3e6",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "$.System.null"
+          },
+          {
+            "id": "0674747d-981e-4525-b4b9-127438a87b85",
+            "operator": {
+              "name": "Contains",
+              "value": "Contains",
+              "shortDisplay": "contains"
+            },
+            "value": "$.Attributes.entered_meter_number"
+          },
+          {
+            "id": "9bd52b61-e9c1-4bc4-90e2-58737682a14d",
+            "operator": {
+              "name": "Contains",
+              "value": "Contains",
+              "shortDisplay": "contains"
+            },
+            "value": "$.Attributes.entered_auth_data"
+          }
+        ]
+      },
+      "cia-sca-12": {
+        "position": {
+          "x": 2096.8,
+          "y": 1156
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "cia-sca-04": {
+        "position": {
+          "x": 1176,
+          "y": 507.2
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "b82180ae-40d9-45df-8e08-146182053e13": {
+        "position": {
+          "x": 380,
+          "y": 1846.4
+        },
+        "parameters": {
+          "PromptId": {
+            "displayName": "Beep.wav"
+          }
+        },
+        "promptName": "Beep.wav"
+      },
+      "cia-pp-03": {
+        "position": {
+          "x": 339.2,
+          "y": 1583.2
+        },
+        "isFriendlyName": true
+      },
+      "cia-cca-02": {
+        "position": {
+          "x": 216.8,
+          "y": 1316
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "b193d8be-2152-4701-a13a-0d38eb182700",
+            "operator": {
+              "name": "Starts with",
+              "value": "StartsWith",
+              "shortDisplay": "starts with"
+            },
+            "value": "en"
+          },
+          {
+            "id": "a279a1c0-b87b-4fc6-89da-1d304aa29fa7",
+            "operator": {
+              "name": "Starts with",
+              "value": "StartsWith",
+              "shortDisplay": "starts with"
+            },
+            "value": "es"
+          }
+        ]
+      },
+      "cia-pp-02": {
+        "position": {
+          "x": 88,
+          "y": 1584.8
+        },
+        "isFriendlyName": true
+      },
+      "2b502308-93b5-4e41-a393-5c90a5613c4b": {
+        "position": {
+          "x": 268.8,
+          "y": 2891.2
+        },
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "6148bec9-7f64-4cde-975a-ff953a1d2d43",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "$.System.null"
+          }
+        ]
+      },
+      "91386911-f4a6-429a-894d-b4162e6b9ec9": {
+        "position": {
+          "x": 355.2,
+          "y": 2654.4
+        }
+      },
+      "5125075167 dummy data": {
+        "position": {
+          "x": 214.4,
+          "y": -416
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "2145805870 dummy data": {
+        "position": {
+          "x": 213.6,
+          "y": -203.2
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "cia-cca-04": {
+        "position": {
+          "x": 663.2,
+          "y": -78.4
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "1dfe3b91-15a0-4965-928c-3ef20fc4f1e5",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "$.System.null"
+          },
+          {
+            "id": "e3c676c7-3820-4fea-adc3-bae535869d0b",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "$.Attributes.entered_password"
+          },
+          {
+            "id": "a88828bc-ec7e-4d86-867e-f9c2465da320",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "$.Attributes.entered_auth_data"
+          }
+        ]
+      },
+      "c58c2981-eb03-4f70-a5a3-9f8aa965f4f3": {
+        "position": {
+          "x": 213.6,
+          "y": -727.2
+        },
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "12c7d860-b047-4428-b879-63ab67766552",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "$.System.null"
+          }
+        ]
+      },
+      "418c4b39-8821-4cd1-8acc-eb249d603288": {
+        "position": {
+          "x": -48.8,
+          "y": -448
+        },
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "400eff23-40be-43a1-8bbf-24f205d921fd",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "true"
+          }
+        ]
+      },
+      "cia-sca-13": {
+        "position": {
+          "x": 2100,
+          "y": 1388
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "1032b879-d715-4cf4-a942-ea28b07e741b": {
+        "position": {
+          "x": 68.8,
+          "y": 1825.6
+        },
+        "parameters": {
+          "TimeLimitSeconds": {
+            "unit": 1
+          }
+        },
+        "timeoutUnit": {
+          "display": "Seconds",
+          "value": "second"
+        }
+      },
+      "360c0bcf-1ac1-4488-9fa6-cb10577dd8ea": {
+        "position": {
+          "x": 214.4,
+          "y": 1074.4
+        },
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "4781e407-6358-41df-baa1-34731fac134e",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "$.System.null"
+          }
+        ]
+      },
+      "9b621840-9e75-480e-a0c2-23d3db1f7454": {
+        "position": {
+          "x": 108,
+          "y": 2650.4
+        },
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "11bf1cd4-3d48-494f-98c6-3a407f0aa0b5",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "true"
+          }
+        ]
+      },
+      "cia-lambda-03": {
+        "position": {
+          "x": 264.8,
+          "y": 2125.6
+        },
+        "isFriendlyName": true
+      },
+      "cia-lambda-02": {
+        "position": {
+          "x": 224.8,
+          "y": 781.6
+        },
+        "isFriendlyName": true
+      },
+      "cia-sca-01": {
+        "position": {
+          "x": 264.8,
+          "y": 2423.2
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "cia-cca-01": {
+        "position": {
+          "x": 208.8,
+          "y": 39.2
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "54ca439c-b5ff-401a-ada8-47750753bb48",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "1"
+          }
+        ]
+      },
+      "f9fc5901-99ac-4148-b45d-25bc5d01084c": {
+        "position": {
+          "x": 223.2,
+          "y": 544.8
+        }
+      },
+      "AWS Lambda Error": {
+        "position": {
+          "x": 1686.4,
+          "y": 1414.4
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "cia-lambda-01": {
+        "position": {
+          "x": 212,
+          "y": 282.4
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "teco-lambda-on-prem-apis-us-east-1-staging"
+          }
+        },
+        "dynamicMetadata": {
+          "phone_number": false,
+          "matched_records_json": false,
+          "account_number": false,
+          "meter_number": false,
+          "social_security_number": false,
+          "visa_number": false,
+          "drivers_license_number": false,
+          "passport_number": false,
+          "house_number": false,
+          "channel": false,
+          "first_level_auth_type": false
+        }
+      }
+    },
+    "Annotations": [],
+    "name": "GetAuthentication",
+    "description": "Programmatically imported by import_flows.py",
+    "status": "published",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {},
+      "Identifier": "cia-return-01",
+      "Type": "EndFlowModuleExecution",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "matched_auth_data_element": "drivers_license_number",
+          "drivers_license_number": "$.Attributes.entered_drivers_license_number"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "cia-sca-06",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-sca-12",
+        "Errors": [
+          {
+            "NextAction": "cia-sca-12",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "entered_drivers_license_number": "$.Attributes.entered_auth_data"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "4f5692fd-2179-41df-be4f-35c2f2e5fa57",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-sca-06",
+        "Errors": [
+          {
+            "NextAction": "cia-sca-06",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.drivers_license_number"
+      },
+      "Identifier": "cia-cca-08",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "cia-cca-09",
+        "Conditions": [
+          {
+            "NextAction": "cia-cca-09",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "$.System.null"
+              ]
+            }
+          },
+          {
+            "NextAction": "cia-sca-06",
+            "Condition": {
+              "Operator": "TextEndsWith",
+              "Operands": [
+                "$.Attributes.entered_drivers_license_number"
+              ]
+            }
+          },
+          {
+            "NextAction": "4f5692fd-2179-41df-be4f-35c2f2e5fa57",
+            "Condition": {
+              "Operator": "TextEndsWith",
+              "Operands": [
+                "$.Attributes.entered_auth_data"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "cia-cca-09",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.house_number_list"
+      },
+      "Identifier": "cia-cca-13",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "cia-sca-13",
+        "Conditions": [
+          {
+            "NextAction": "cia-sca-13",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "$.System.null"
+              ]
+            }
+          },
+          {
+            "NextAction": "cia-sca-11",
+            "Condition": {
+              "Operator": "TextContains",
+              "Operands": [
+                "$.Attributes.entered_house_number"
+              ]
+            }
+          },
+          {
+            "NextAction": "7c00228e-ae9d-4409-bdb2-1eb13988ab69",
+            "Condition": {
+              "Operator": "TextContains",
+              "Operands": [
+                "$.Attributes.entered_auth_data"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "cia-sca-13",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "entered_house_number": "$.Attributes.entered_auth_data"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "7c00228e-ae9d-4409-bdb2-1eb13988ab69",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-sca-11",
+        "Errors": [
+          {
+            "NextAction": "cia-sca-11",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "matched_auth_data_element": "house_number",
+          "house_number": "$.Attributes.entered_house_number"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "cia-sca-11",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-sca-12",
+        "Errors": [
+          {
+            "NextAction": "cia-sca-12",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "entered_phone_number": "$.Attributes.entered_auth_data"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "0601ec8a-967f-4f25-90d9-3b487b5b51ec",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-sca-10",
+        "Errors": [
+          {
+            "NextAction": "cia-sca-10",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.phone_number_list"
+      },
+      "Identifier": "cia-cca-12",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "cia-cca-13",
+        "Conditions": [
+          {
+            "NextAction": "cia-cca-13",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "$.System.null"
+              ]
+            }
+          },
+          {
+            "NextAction": "cia-sca-10",
+            "Condition": {
+              "Operator": "TextContains",
+              "Operands": [
+                "$.Attributes.entered_phone_number"
+              ]
+            }
+          },
+          {
+            "NextAction": "0601ec8a-967f-4f25-90d9-3b487b5b51ec",
+            "Condition": {
+              "Operator": "TextContains",
+              "Operands": [
+                "$.Attributes.entered_auth_data"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "cia-cca-13",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "matched_auth_data_element": "phone_number",
+          "phone_number": "$.Attributes.entered_phone_number"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "cia-sca-10",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-sca-12",
+        "Errors": [
+          {
+            "NextAction": "cia-sca-12",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "entered_taxpayer_id_number": "$.Attributes.entered_auth_data"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "5a1d3c3c-a00a-4390-a749-7f400adf809e",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-sca-09",
+        "Errors": [
+          {
+            "NextAction": "cia-sca-09",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.taxpayer_id_number"
+      },
+      "Identifier": "cia-cca-11",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "cia-cca-12",
+        "Conditions": [
+          {
+            "NextAction": "cia-cca-12",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "$.System.null"
+              ]
+            }
+          },
+          {
+            "NextAction": "cia-sca-09",
+            "Condition": {
+              "Operator": "TextEndsWith",
+              "Operands": [
+                "$.Attributes.entered_taxpayer_id_number"
+              ]
+            }
+          },
+          {
+            "NextAction": "5a1d3c3c-a00a-4390-a749-7f400adf809e",
+            "Condition": {
+              "Operator": "TextEndsWith",
+              "Operands": [
+                "$.Attributes.entered_auth_data"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "cia-cca-12",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "matched_auth_data_element": "taxpayer_id_number",
+          "taxpayer_id_number": "$.Attributes.entered_taxpayer_id_number"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "cia-sca-09",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-sca-12",
+        "Errors": [
+          {
+            "NextAction": "cia-sca-12",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.visa_number"
+      },
+      "Identifier": "cia-cca-10",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "cia-cca-11",
+        "Conditions": [
+          {
+            "NextAction": "cia-cca-11",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "$.System.null"
+              ]
+            }
+          },
+          {
+            "NextAction": "cia-sca-08",
+            "Condition": {
+              "Operator": "TextEndsWith",
+              "Operands": [
+                "$.Attributes.entered_visa_number"
+              ]
+            }
+          },
+          {
+            "NextAction": "17be3687-9afd-4b22-a6ca-eb1af94cc86b",
+            "Condition": {
+              "Operator": "TextEndsWith",
+              "Operands": [
+                "$.Attributes.entered_auth_data"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "cia-cca-11",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "matched_auth_data_element": "visa_number",
+          "visa_number": "$.Attributes.entered_visa_number"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "cia-sca-08",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-sca-12",
+        "Errors": [
+          {
+            "NextAction": "cia-sca-12",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "entered_visa_number": "$.Attributes.entered_auth_data"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "17be3687-9afd-4b22-a6ca-eb1af94cc86b",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-sca-08",
+        "Errors": [
+          {
+            "NextAction": "cia-sca-08",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "entered_passport_number": "$.Attributes.entered_auth_data"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "3714c6dd-891c-4a18-97fc-295bea6bfade",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-sca-07",
+        "Errors": [
+          {
+            "NextAction": "cia-sca-07",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.passport_number"
+      },
+      "Identifier": "cia-cca-09",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "cia-cca-10",
+        "Conditions": [
+          {
+            "NextAction": "cia-cca-10",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "$.System.null"
+              ]
+            }
+          },
+          {
+            "NextAction": "cia-sca-07",
+            "Condition": {
+              "Operator": "TextEndsWith",
+              "Operands": [
+                "$.Attributes.entered_passport_number"
+              ]
+            }
+          },
+          {
+            "NextAction": "3714c6dd-891c-4a18-97fc-295bea6bfade",
+            "Condition": {
+              "Operator": "TextEndsWith",
+              "Operands": [
+                "$.Attributes.entered_auth_data"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "cia-cca-10",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "matched_auth_data_element": "passport_number",
+          "passport_number": "$.Attributes.entered_passport_number"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "cia-sca-07",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-sca-12",
+        "Errors": [
+          {
+            "NextAction": "cia-sca-12",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "entered_social_security_number": "$.Attributes.entered_auth_data"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "dcdbe3bf-0f49-479e-b22a-7f44e1d91f01",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-sca-05",
+        "Errors": [
+          {
+            "NextAction": "cia-sca-05",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.social_security_number"
+      },
+      "Identifier": "cia-cca-07",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "cia-cca-08",
+        "Conditions": [
+          {
+            "NextAction": "cia-cca-08",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "$.System.null"
+              ]
+            }
+          },
+          {
+            "NextAction": "cia-sca-05",
+            "Condition": {
+              "Operator": "TextEndsWith",
+              "Operands": [
+                "$.Attributes.entered_social_security_number"
+              ]
+            }
+          },
+          {
+            "NextAction": "dcdbe3bf-0f49-479e-b22a-7f44e1d91f01",
+            "Condition": {
+              "Operator": "TextEndsWith",
+              "Operands": [
+                "$.Attributes.entered_auth_data"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "cia-cca-08",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "matched_auth_data_element": "social_security_number",
+          "social_security_number": "$.Attributes.entered_social_security_number"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "cia-sca-05",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-sca-12",
+        "Errors": [
+          {
+            "NextAction": "cia-sca-12",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.account_number_list"
+      },
+      "Identifier": "cia-cca-05",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "cia-cca-06",
+        "Conditions": [
+          {
+            "NextAction": "cia-cca-06",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "$.System.null"
+              ]
+            }
+          },
+          {
+            "NextAction": "cia-sca-03",
+            "Condition": {
+              "Operator": "TextContains",
+              "Operands": [
+                "$.Attributes.entered_account_number"
+              ]
+            }
+          },
+          {
+            "NextAction": "0b9355fc-02ef-4dd0-9ba1-1604f7aa0f28",
+            "Condition": {
+              "Operator": "TextContains",
+              "Operands": [
+                "$.Attributes.entered_auth_data"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "cia-cca-06",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "entered_account_number": "$.Attributes.entered_auth_data"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "0b9355fc-02ef-4dd0-9ba1-1604f7aa0f28",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-sca-03",
+        "Errors": [
+          {
+            "NextAction": "cia-sca-03",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "matched_auth_data_element": "account_number",
+          "AccountID": "$.Attributes.entered_account_number",
+          "account_number": "$.Attributes.entered_account_number"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "cia-sca-03",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-sca-12",
+        "Errors": [
+          {
+            "NextAction": "cia-sca-12",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "entered_password": "$.Attributes.entered_auth_data"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "8b1613d2-395e-45fb-953d-3c51264b2f2c",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-sca-02",
+        "Errors": [
+          {
+            "NextAction": "cia-sca-02",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "matched_auth_data_element": "password",
+          "password": "$.Attributes.entered_password"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "cia-sca-02",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-sca-12",
+        "Errors": [
+          {
+            "NextAction": "cia-sca-12",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "ErrorCode": "13",
+          "ErrorMsg": "Lambda result timed out"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "AWS Lambda Timeout Error",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-sca-13",
+        "Errors": [
+          {
+            "NextAction": "cia-sca-13",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.CustomerEndpoint.Address"
+      },
+      "Identifier": "f9066d19-0422-4bf1-9c9d-8e37c6c2784f",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "2145805870 dummy data",
+        "Conditions": [
+          {
+            "NextAction": "5125075167 dummy data",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "+15125075167"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "2145805870 dummy data",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "matched_records_json": "$.External.matched_records_json"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "cia-sca-01-copy-1",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-cca-03",
+        "Errors": [
+          {
+            "NextAction": "cia-cca-03",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.record_match_count"
+      },
+      "Identifier": "cia-cca-03",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "cia-sca-13",
+        "Conditions": [
+          {
+            "NextAction": "cia-sca-13",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "0"
+              ]
+            }
+          },
+          {
+            "NextAction": "cia-cca-04",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "1"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "cia-sca-13",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "entered_meter_number": "$.Attributes.entered_auth_data"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "b81b8767-43d3-422a-b44d-0ecb7141bb51",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-sca-04",
+        "Errors": [
+          {
+            "NextAction": "cia-sca-04",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.meter_number_list"
+      },
+      "Identifier": "cia-cca-06",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "cia-cca-07",
+        "Conditions": [
+          {
+            "NextAction": "cia-cca-07",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "$.System.null"
+              ]
+            }
+          },
+          {
+            "NextAction": "cia-sca-04",
+            "Condition": {
+              "Operator": "TextContains",
+              "Operands": [
+                "$.Attributes.entered_meter_number"
+              ]
+            }
+          },
+          {
+            "NextAction": "b81b8767-43d3-422a-b44d-0ecb7141bb51",
+            "Condition": {
+              "Operator": "TextContains",
+              "Operands": [
+                "$.Attributes.entered_auth_data"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "cia-cca-07",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "Authenticated": "true"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "cia-sca-12",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-return-01",
+        "Errors": [
+          {
+            "NextAction": "cia-return-01",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "matched_auth_data_element": "meter_number",
+          "meter_number": "$.Attributes.entered_meter_number"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "cia-sca-04",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-sca-12",
+        "Errors": [
+          {
+            "NextAction": "cia-sca-12",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "PromptId": "arn:aws:connect:us-east-1:499761511710:instance/f57b95f5-bcb8-4bdf-b0c0-ee97d5da5336/prompt/689d86c2-9e2f-4f22-b19e-d4da2d9247b0"
+      },
+      "Identifier": "b82180ae-40d9-45df-8e08-146182053e13",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "1032b879-d715-4cf4-a942-ea28b07e741b",
+        "Errors": [
+          {
+            "NextAction": "1032b879-d715-4cf4-a942-ea28b07e741b",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SSML": "<speak>Por favor, espere mientras busco la información de su cuenta.</speak>"
+      },
+      "Identifier": "cia-pp-03",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "1032b879-d715-4cf4-a942-ea28b07e741b",
+        "Errors": [
+          {
+            "NextAction": "1032b879-d715-4cf4-a942-ea28b07e741b",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.LanguageCode"
+      },
+      "Identifier": "cia-cca-02",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "cia-pp-02",
+        "Conditions": [
+          {
+            "NextAction": "cia-pp-02",
+            "Condition": {
+              "Operator": "TextStartsWith",
+              "Operands": [
+                "en"
+              ]
+            }
+          },
+          {
+            "NextAction": "cia-pp-03",
+            "Condition": {
+              "Operator": "TextStartsWith",
+              "Operands": [
+                "es"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "cia-pp-02",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SSML": "<speak>Please wait while I look up your account information.</speak>"
+      },
+      "Identifier": "cia-pp-02",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "1032b879-d715-4cf4-a942-ea28b07e741b",
+        "Errors": [
+          {
+            "NextAction": "1032b879-d715-4cf4-a942-ea28b07e741b",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.matched_records_json"
+      },
+      "Identifier": "2b502308-93b5-4e41-a393-5c90a5613c4b",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "cia-cca-03",
+        "Conditions": [
+          {
+            "NextAction": "cia-sca-01-copy-1",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "$.System.null"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "cia-cca-03",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Account information retrieved.  I found $.Attributes.record_match_count matching records."
+      },
+      "Identifier": "91386911-f4a6-429a-894d-b4162e6b9ec9",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "2b502308-93b5-4e41-a393-5c90a5613c4b",
+        "Errors": [
+          {
+            "NextAction": "2b502308-93b5-4e41-a393-5c90a5613c4b",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "matched_records_json": "[{\"social_security_number\": \"\", \"passport_number\": \"\", \"drivers_license_number\": \"\", \"visa_number\": \"\", \"taxpayer_id_number\": \"\", \"password\": \"\", \"account_number_list\": [\"211001881674\"], \"meter_number_list\": [\"000000001000335844\"], \"house_number_list\": [\"1513\"], \"phone_number_list\": [\"1112223333\", \"5125075167\"], \"account_type\": \"1\", \"first_house_number\": \"1513\", \"first_account_number\": \"211001881674\"}]"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "5125075167 dummy data",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-cca-01",
+        "Errors": [
+          {
+            "NextAction": "cia-cca-01",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "matched_records_json": "[{\"social_security_number\": \"4321\", \"passport_number\": \"\", \"drivers_license_number\": \"\", \"visa_number\": \"\", \"taxpayer_id_number\": \"\", \"password\": \"\", \"account_number_list\": [\"211002049354\"], \"meter_number_list\": [\"11MT052371\", \"000000001000219873\"], \"house_number_list\": [\"4111\"], \"phone_number_list\": [\"1112223333\", \"2145805870\"], \"account_type\": \"1\", \"first_house_number\": \"4111\", \"first_account_number\": \"211002049354\"}, {\"social_security_number\": \"4321\", \"passport_number\": \"\", \"drivers_license_number\": \"\", \"visa_number\": \"\", \"taxpayer_id_number\": \"\", \"password\": \"\", \"account_number_list\": [\"211002630195\"], \"meter_number_list\": [\"000000001000584754\"], \"house_number_list\": [\"5510\"], \"phone_number_list\": [\"1112223333\", \"2145805870\"], \"account_type\": \"1\", \"first_house_number\": \"5510\", \"first_account_number\": \"211002630195\"}, {\"social_security_number\": \"4321\", \"passport_number\": \"\", \"drivers_license_number\": \"\", \"visa_number\": \"\", \"taxpayer_id_number\": \"\", \"password\": \"\", \"account_number_list\": [\"211003577775\"], \"meter_number_list\": [\"000000001000033974\"], \"house_number_list\": [\"3819\"], \"phone_number_list\": [\"1112223333\", \"2145805870\"], \"account_type\": \"1\", \"first_house_number\": \"3819\", \"first_account_number\": \"211003577775\"}]"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "2145805870 dummy data",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-cca-01",
+        "Errors": [
+          {
+            "NextAction": "cia-cca-01",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.password"
+      },
+      "Identifier": "cia-cca-04",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "cia-cca-05",
+        "Conditions": [
+          {
+            "NextAction": "cia-cca-05",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "$.System.null"
+              ]
+            }
+          },
+          {
+            "NextAction": "cia-sca-02",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "$.Attributes.entered_password"
+              ]
+            }
+          },
+          {
+            "NextAction": "8b1613d2-395e-45fb-953d-3c51264b2f2c",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "$.Attributes.entered_auth_data"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "cia-cca-05",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.matched_records_json"
+      },
+      "Identifier": "c58c2981-eb03-4f70-a5a3-9f8aa965f4f3",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "cia-cca-01",
+        "Conditions": [
+          {
+            "NextAction": "f9066d19-0422-4bf1-9c9d-8e37c6c2784f",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "$.System.null"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "cia-cca-01",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.use_test_data"
+      },
+      "Identifier": "418c4b39-8821-4cd1-8acc-eb249d603288",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "cia-cca-01",
+        "Conditions": [
+          {
+            "NextAction": "c58c2981-eb03-4f70-a5a3-9f8aa965f4f3",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "true"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "cia-cca-01",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "Authenticated": "false"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "cia-sca-13",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-return-01",
+        "Errors": [
+          {
+            "NextAction": "cia-return-01",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "TimeLimitSeconds": "2",
+        "InterruptibleEvents": {
+          "LambdaReturned": {
+            "AsyncLambdaCompletionEvent": {
+              "Identifier": "$.LambdaInvocation.InvocationId"
+            }
+          }
+        }
+      },
+      "Identifier": "1032b879-d715-4cf4-a942-ea28b07e741b",
+      "Type": "Wait",
+      "Transitions": {
+        "NextAction": "AWS Lambda Error",
+        "Conditions": [
+          {
+            "NextAction": "cia-lambda-03",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "LambdaReturned"
+              ]
+            }
+          },
+          {
+            "NextAction": "b82180ae-40d9-45df-8e08-146182053e13",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "WaitCompleted"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "AWS Lambda Error",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.matched_records_json"
+      },
+      "Identifier": "360c0bcf-1ac1-4488-9fa6-cb10577dd8ea",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "1032b879-d715-4cf4-a942-ea28b07e741b",
+        "Conditions": [
+          {
+            "NextAction": "cia-cca-02",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "$.System.null"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "1032b879-d715-4cf4-a942-ea28b07e741b",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.debug_enabled"
+      },
+      "Identifier": "9b621840-9e75-480e-a0c2-23d3db1f7454",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "2b502308-93b5-4e41-a393-5c90a5613c4b",
+        "Conditions": [
+          {
+            "NextAction": "91386911-f4a6-429a-894d-b4162e6b9ec9",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "true"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "2b502308-93b5-4e41-a393-5c90a5613c4b",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaInvocationId": "$.LambdaInvocation.InvocationId"
+      },
+      "Identifier": "cia-lambda-03",
+      "Type": "LoadLambdaFunctionResult",
+      "Transitions": {
+        "NextAction": "cia-sca-01",
+        "Errors": [
+          {
+            "NextAction": "AWS Lambda Error",
+            "ErrorType": "NoMatchingError"
+          },
+          {
+            "NextAction": "1032b879-d715-4cf4-a942-ea28b07e741b",
+            "ErrorType": "InProgress"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaInvocationId": "$.LambdaInvocation.InvocationId"
+      },
+      "Identifier": "cia-lambda-02",
+      "Type": "LoadLambdaFunctionResult",
+      "Transitions": {
+        "NextAction": "cia-sca-01",
+        "Errors": [
+          {
+            "NextAction": "AWS Lambda Error",
+            "ErrorType": "NoMatchingError"
+          },
+          {
+            "NextAction": "360c0bcf-1ac1-4488-9fa6-cb10577dd8ea",
+            "ErrorType": "InProgress"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "account_number_list": "$.External.account_number_list",
+          "password": "$.External.password",
+          "meter_number_list": "$.External.meter_number_list",
+          "social_security_number": "$.External.social_security_number",
+          "visa_number": "$.External.visa_number",
+          "drivers_license_number": "$.External.drivers_license_number",
+          "passport_number": "$.External.passport_number",
+          "taxpayer_id_number": "$.External.taxpayer_id_number",
+          "record_match_count": "$.External.record_match_count",
+          "house_number_list": "$.External.house_number_list",
+          "alternate_auth_type_count": "$.External.alternate_auth_type_count",
+          "phone_number_list": "$.External.phone_number_list",
+          "alternate_auth_type_list": "$.External.alternate_auth_type_list",
+          "account_type": "$.External.account_type",
+          "matched_alternate_auth_type_list": "$.External.matched_alternate_auth_type_list",
+          "matched_alternate_auth_type_count": "$.External.matched_alternate_auth_type_count",
+          "first_house_number": "$.External.first_house_number",
+          "first_account_number": "$.External.first_account_number",
+          "house_numbers_unique": "$.External.house_numbers_unique",
+          "account_numbers_unique": "$.External.account_numbers_unique"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "cia-sca-01",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "9b621840-9e75-480e-a0c2-23d3db1f7454",
+        "Errors": [
+          {
+            "NextAction": "9b621840-9e75-480e-a0c2-23d3db1f7454",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.MatchedRecordCount"
+      },
+      "Identifier": "cia-cca-01",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "cia-lambda-01",
+        "Conditions": [
+          {
+            "NextAction": "cia-cca-04",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "1"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "cia-lambda-01",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SSML": "<speak><break time=\"1000ms\"/></speak>"
+      },
+      "Identifier": "f9fc5901-99ac-4148-b45d-25bc5d01084c",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "cia-lambda-02",
+        "Errors": [
+          {
+            "NextAction": "cia-lambda-02",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "ErrorCode": "1",
+          "ErrorMsg": "Lambda error",
+          "APIError": "$.External.error"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "AWS Lambda Error",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cia-sca-13",
+        "Errors": [
+          {
+            "NextAction": "cia-sca-13",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:499761511710:function:teco-lambda-on-prem-apis-us-east-1-staging",
+        "InvocationTimeLimitSeconds": "60",
+        "InvocationType": "ASYNCHRONOUS",
+        "LambdaInvocationAttributes": {
+          "phone_number": "$.Attributes.phone_number",
+          "matched_records_json": "$.Attributes.matched_records_json",
+          "account_number": "$.Attributes.account_number",
+          "meter_number": "$.Attributes.meter_number",
+          "social_security_number": "$.Attributes.social_security_number",
+          "visa_number": "$.Attributes.visa_number",
+          "drivers_license_number": "$.Attributes.drivers_license_number",
+          "passport_number": "$.Attributes.passport_number",
+          "house_number": "$.Attributes.house_number",
+          "channel": "voice",
+          "first_level_auth_type": "$.Attributes.first_level_auth_type"
+        },
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "cia-lambda-01",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "f9fc5901-99ac-4148-b45d-25bc5d01084c",
+        "Errors": [
+          {
+            "NextAction": "AWS Lambda Error",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ],
+  "Settings": {
+    "InputParameters": [],
+    "OutputParameters": [],
+    "Transitions": [
+      {
+        "DisplayName": "Success",
+        "ReferenceName": "Success",
+        "Description": ""
+      },
+      {
+        "DisplayName": "Error",
+        "ReferenceName": "Error",
+        "Description": ""
+      }
+    ]
+  }
+}
