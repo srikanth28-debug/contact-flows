@@ -1,0 +1,741 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "77a91efd-9212-4057-97e2-bac0e9018c69",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": 40,
+      "y": 40
+    },
+    "ActionMetadata": {
+      "Stop KVS if the customer is still on the call.": {
+        "position": {
+          "x": 2976,
+          "y": 1145.6
+        },
+        "isFriendlyName": true
+      },
+      "d4743ebc-ece1-4e31-9a16-24a346f97826": {
+        "position": {
+          "x": 1239.2,
+          "y": 16.8
+        },
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "4d4d6270-4ab9-4156-b418-e9ca78cc29c4",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "es-US"
+          }
+        ]
+      },
+      "Play the start recording beep using SSML": {
+        "position": {
+          "x": 2959.2,
+          "y": 658.4
+        },
+        "isFriendlyName": true
+      },
+      "Start KVS from customer only": {
+        "position": {
+          "x": 1892,
+          "y": 462.4
+        },
+        "isFriendlyName": true,
+        "toCustomer": false,
+        "fromCustomer": true
+      },
+      "7a6e4beb-a087-482b-843b-4723c8bb7110": {
+        "position": {
+          "x": 1897.6,
+          "y": 704.8
+        }
+      },
+      "Set the vmx3_flag attribute for processing": {
+        "position": {
+          "x": 2206.4,
+          "y": 448.8
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "7ccb8d9d-422f-4022-9883-d99b950cfb48": {
+        "position": {
+          "x": 1608,
+          "y": -32
+        },
+        "dynamicParams": []
+      },
+      "a98153ff-44d4-4bf0-8570-980bf13aadd7": {
+        "position": {
+          "x": 1620.8,
+          "y": 202.4
+        },
+        "dynamicParams": []
+      },
+      "KVS startup and flag loop": {
+        "position": {
+          "x": 1631.2,
+          "y": 454.4
+        },
+        "isFriendlyName": true
+      },
+      "Play initial voicemail greeting": {
+        "position": {
+          "x": 1251.2,
+          "y": 244
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "SSML": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "a3dc1065-c16f-4352-82b0-891cb64b821c": {
+        "position": {
+          "x": 733.6,
+          "y": 478.4
+        },
+        "parameters": {
+          "ThirdPartyPhoneNumber": {
+            "countryCode": "",
+            "useDynamic": true
+          }
+        }
+      },
+      "799572fe-b4bb-470e-9dcb-294526c70dc6": {
+        "position": {
+          "x": 1012.8,
+          "y": 708.8
+        }
+      },
+      "933d1f64-67b5-4a3d-bdeb-999c7ab06058": {
+        "position": {
+          "x": 1008,
+          "y": 451.2
+        }
+      },
+      "79725886-390c-4f70-9387-7d7bd423ebe6": {
+        "position": {
+          "x": 1006.4,
+          "y": 32
+        },
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "a6d16b2b-61c3-480b-821a-214546378f0a",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "$.Attributes.null"
+          }
+        ]
+      },
+      "77a91efd-9212-4057-97e2-bac0e9018c69": {
+        "position": {
+          "x": 213.6,
+          "y": 39.2
+        },
+        "parameters": {
+          "Messages": [
+            {
+              "PromptId": {
+                "displayName": "CustomerQueue-45-Seconds"
+              }
+            }
+          ],
+          "InterruptFrequencySeconds": {
+            "unit": 1
+          }
+        },
+        "audio": [
+          {
+            "id": "arn:aws:connect:us-east-1:499761511710:instance/f57b95f5-bcb8-4bdf-b0c0-ee97d5da5336/prompt/df4f5217-4f3f-4afb-80cf-25948e374c88",
+            "text": "CustomerQueue-45-Seconds",
+            "type": "Prompt"
+          }
+        ],
+        "timeoutUnit": {
+          "value": "sec"
+        }
+      },
+      "7a0fc02a-2804-479b-9701-c73b845f28b2": {
+        "position": {
+          "x": 732.8,
+          "y": 249.6
+        },
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "71f2ae92-9a42-4564-947e-e48f27a0279a",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "$.System.null"
+          }
+        ]
+      },
+      "83d27836-dc74-4b8c-b710-64d1309c319e": {
+        "position": {
+          "x": 451.2,
+          "y": 51.2
+        },
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "fb9449d8-bd27-4c04-b4e8-3920e46da879",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "true"
+          }
+        ]
+      },
+      "***End Call***": {
+        "position": {
+          "x": 2972,
+          "y": 1418.4
+        },
+        "isFriendlyName": true
+      },
+      "Wait for caller to record.": {
+        "position": {
+          "x": 2969.6,
+          "y": 875.2
+        },
+        "isFriendlyName": true,
+        "conditionMetadata": []
+      },
+      "Clear vmx3_flag": {
+        "position": {
+          "x": 2660,
+          "y": 678.4
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "Was the vmx3_flag already set?": {
+        "position": {
+          "x": 2199.2,
+          "y": 708.8
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "ba4d95c5-8690-4089-ab36-2d8b31e8ae1a",
+            "operator": {
+              "name": "Is greater than",
+              "value": "GreaterThan",
+              "shortDisplay": ">"
+            },
+            "value": "0"
+          }
+        ]
+      },
+      "Error messaging.": {
+        "position": {
+          "x": 2679.2,
+          "y": 910.4
+        },
+        "isFriendlyName": true
+      }
+    },
+    "Annotations": [
+      {
+        "type": "default",
+        "id": "18918431-6f34-444e-bf40-69a51b8ad129",
+        "content": "If you want to increase/decrease the amount of time for voicemail recordings, do that here via the Timeout setting in this block.",
+        "actionId": "Wait for caller to record.",
+        "isFolded": true,
+        "position": {
+          "x": 3724.5,
+          "y": 1346
+        },
+        "size": {
+          "height": 295,
+          "width": 300
+        }
+      }
+    ],
+    "name": "DirectToAgentQueue",
+    "description": "Programmatically imported by import_flows.py",
+    "type": "customerQueue",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {
+        "MediaStreamingState": "Disabled",
+        "Participants": [
+          {
+            "ParticipantType": "Customer",
+            "MediaDirections": [
+              "To",
+              "From"
+            ]
+          }
+        ],
+        "MediaStreamType": "Audio"
+      },
+      "Identifier": "Stop KVS if the customer is still on the call.",
+      "Type": "UpdateContactMediaStreamingBehavior",
+      "Transitions": {
+        "NextAction": "***End Call***",
+        "Errors": [
+          {
+            "NextAction": "***End Call***",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.LanguageCode"
+      },
+      "Identifier": "d4743ebc-ece1-4e31-9a16-24a346f97826",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "a98153ff-44d4-4bf0-8570-980bf13aadd7",
+        "Conditions": [
+          {
+            "NextAction": "7ccb8d9d-422f-4022-9883-d99b950cfb48",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "es-US"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "a98153ff-44d4-4bf0-8570-980bf13aadd7",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SSML": "<speak>\n  <say-as interpret-as=\"expletive\">beep</say-as>\n</speak>"
+      },
+      "Identifier": "Play the start recording beep using SSML",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "Wait for caller to record.",
+        "Errors": [
+          {
+            "NextAction": "Wait for caller to record.",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "MediaStreamingState": "Enabled",
+        "MediaStreamType": "Audio",
+        "Participants": [
+          {
+            "ParticipantType": "Customer",
+            "MediaDirections": [
+              "From"
+            ]
+          }
+        ]
+      },
+      "Identifier": "Start KVS from customer only",
+      "Type": "UpdateContactMediaStreamingBehavior",
+      "Transitions": {
+        "NextAction": "Set the vmx3_flag attribute for processing",
+        "Errors": [
+          {
+            "NextAction": "7a6e4beb-a087-482b-843b-4723c8bb7110",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SSML": "<speak>\nIt appears that KVS has not previously been initialized. Trying to initialize now. One moment please.\n<break time=\"5s\"/>\n</speak>"
+      },
+      "Identifier": "7a6e4beb-a087-482b-843b-4723c8bb7110",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "KVS startup and flag loop",
+        "Errors": [
+          {
+            "NextAction": "KVS startup and flag loop",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "vmx3_flag": "1"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "Set the vmx3_flag attribute for processing",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "Play the start recording beep using SSML",
+        "Errors": [
+          {
+            "NextAction": "Was the vmx3_flag already set?",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "voicemail_prompt": "<speak>Por favor, deje un mensaje detallado al oír el tono y le devolveremos la llamada el siguiente día hábil.</speak>"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "7ccb8d9d-422f-4022-9883-d99b950cfb48",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "Play initial voicemail greeting",
+        "Errors": [
+          {
+            "NextAction": "Play initial voicemail greeting",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "voicemail_prompt": "<speak>Please leave a detailed message at the tone and we will return your call on the next business day</speak>"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "a98153ff-44d4-4bf0-8570-980bf13aadd7",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "Play initial voicemail greeting",
+        "Errors": [
+          {
+            "NextAction": "Play initial voicemail greeting",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "2"
+      },
+      "Identifier": "KVS startup and flag loop",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "Was the vmx3_flag already set?",
+        "Conditions": [
+          {
+            "NextAction": "Start KVS from customer only",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "Was the vmx3_flag already set?",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SSML": "$.Attributes.voicemail_prompt"
+      },
+      "Identifier": "Play initial voicemail greeting",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "KVS startup and flag loop",
+        "Errors": [
+          {
+            "NextAction": "KVS startup and flag loop",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ThirdPartyPhoneNumber": "$.Attributes.forwarding_number",
+        "ThirdPartyConnectionTimeLimitSeconds": "30",
+        "ContinueFlowExecution": "False"
+      },
+      "Identifier": "a3dc1065-c16f-4352-82b0-891cb64b821c",
+      "Type": "TransferParticipantToThirdParty",
+      "Transitions": {
+        "NextAction": "799572fe-b4bb-470e-9dcb-294526c70dc6",
+        "Errors": [
+          {
+            "NextAction": "799572fe-b4bb-470e-9dcb-294526c70dc6",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "799572fe-b4bb-470e-9dcb-294526c70dc6",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "SSML": "<speak>The party you have called is unavailable.  Please try your call again later.</speak>"
+      },
+      "Identifier": "933d1f64-67b5-4a3d-bdeb-999c7ab06058",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "799572fe-b4bb-470e-9dcb-294526c70dc6",
+        "Errors": [
+          {
+            "NextAction": "799572fe-b4bb-470e-9dcb-294526c70dc6",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.voicemail_prompt"
+      },
+      "Identifier": "79725886-390c-4f70-9387-7d7bd423ebe6",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "Play initial voicemail greeting",
+        "Conditions": [
+          {
+            "NextAction": "d4743ebc-ece1-4e31-9a16-24a346f97826",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "$.Attributes.null"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "Play initial voicemail greeting",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Messages": [
+          {
+            "PromptId": "arn:aws:connect:us-east-1:499761511710:instance/f57b95f5-bcb8-4bdf-b0c0-ee97d5da5336/prompt/df4f5217-4f3f-4afb-80cf-25948e374c88"
+          }
+        ],
+        "InterruptFrequencySeconds": "30",
+        "ContinueMessagingDuringInterrupt": "false"
+      },
+      "Identifier": "77a91efd-9212-4057-97e2-bac0e9018c69",
+      "Type": "MessageParticipantIteratively",
+      "Transitions": {
+        "NextAction": "83d27836-dc74-4b8c-b710-64d1309c319e",
+        "Conditions": [
+          {
+            "NextAction": "83d27836-dc74-4b8c-b710-64d1309c319e",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "MessagesInterrupted"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "83d27836-dc74-4b8c-b710-64d1309c319e",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.forwarding_number"
+      },
+      "Identifier": "7a0fc02a-2804-479b-9701-c73b845f28b2",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "a3dc1065-c16f-4352-82b0-891cb64b821c",
+        "Conditions": [
+          {
+            "NextAction": "933d1f64-67b5-4a3d-bdeb-999c7ab06058",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "$.System.null"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "a3dc1065-c16f-4352-82b0-891cb64b821c",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.voicemail_enabled"
+      },
+      "Identifier": "83d27836-dc74-4b8c-b710-64d1309c319e",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "7a0fc02a-2804-479b-9701-c73b845f28b2",
+        "Conditions": [
+          {
+            "NextAction": "79725886-390c-4f70-9387-7d7bd423ebe6",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "true"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "7a0fc02a-2804-479b-9701-c73b845f28b2",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "***End Call***",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "StoreInput": "False",
+        "InputTimeLimitSeconds": "120",
+        "SSML": "<speak>\n<break time=\"5s\"/>\n</speak>"
+      },
+      "Identifier": "Wait for caller to record.",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "Stop KVS if the customer is still on the call.",
+        "Errors": [
+          {
+            "NextAction": "Stop KVS if the customer is still on the call.",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "Stop KVS if the customer is still on the call.",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "Error messaging.",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "vmx3_flag": "0"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "Clear vmx3_flag",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "Error messaging.",
+        "Errors": [
+          {
+            "NextAction": "Error messaging.",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.vmx3_flag"
+      },
+      "Identifier": "Was the vmx3_flag already set?",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "Error messaging.",
+        "Conditions": [
+          {
+            "NextAction": "Clear vmx3_flag",
+            "Condition": {
+              "Operator": "NumberGreaterThan",
+              "Operands": [
+                "0"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "Error messaging.",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "The voicemail system has encountered an error. We are placing you in queue."
+      },
+      "Identifier": "Error messaging.",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "***End Call***",
+        "Errors": [
+          {
+            "NextAction": "***End Call***",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ]
+}

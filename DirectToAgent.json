@@ -1,0 +1,877 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "dta-slb-01",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": -200.8,
+      "y": 436.8
+    },
+    "ActionMetadata": {
+      "dta-sv-01": {
+        "position": {
+          "x": -40,
+          "y": 644
+        },
+        "isFriendlyName": true,
+        "children": [
+          "dta-sv-01-zwvSyvdKlD"
+        ],
+        "parameters": {
+          "TextToSpeechVoice": {
+            "languageCode": "en-US"
+          }
+        },
+        "overrideConsoleVoice": true,
+        "fragments": {
+          "SetContactData": "dta-sv-01-zwvSyvdKlD"
+        },
+        "overrideLanguageAttribute": true
+      },
+      "dta-sv-01-zwvSyvdKlD": {
+        "position": {
+          "x": -40,
+          "y": 644
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "dta-lambda-01": {
+        "position": {
+          "x": 243.2,
+          "y": 431.2
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "teco-lambda-get-did-to-agent-map-us-east-1-staging"
+          },
+          "LambdaInvocationAttributes": {
+            "did_number": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicMetadata": {
+          "did_number": true
+        }
+      },
+      "dta-slb-01": {
+        "position": {
+          "x": -40.8,
+          "y": 437.6
+        },
+        "isFriendlyName": true
+      },
+      "dta-im-01": {
+        "position": {
+          "x": 2388,
+          "y": 645.6
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "FlowModuleId": {
+            "displayName": "LeaveVoicemail"
+          }
+        },
+        "contactFlowModuleName": "LeaveVoicemail"
+      },
+      "dta-pp-01": {
+        "position": {
+          "x": 2902.4,
+          "y": 839.2
+        },
+        "isFriendlyName": true
+      },
+      "dta-ttpn-01": {
+        "position": {
+          "x": 2908.8,
+          "y": 1069.6
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "ThirdPartyPhoneNumber": {
+            "countryCode": "",
+            "useDynamic": true
+          }
+        }
+      },
+      "dta-cca-05": {
+        "position": {
+          "x": 2395.2,
+          "y": 860.8
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "b403d151-8852-4891-86e3-9eff4aaf5d72",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "$.System.null"
+          }
+        ]
+      },
+      "dta-ttq-01": {
+        "position": {
+          "x": 2919.2,
+          "y": 409.6
+        },
+        "isFriendlyName": true
+      },
+      "dta-swf-01": {
+        "position": {
+          "x": 2376,
+          "y": 413.6
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "EventHooks": {
+            "AgentWhisper": {
+              "displayName": "DirectToAgentWhisper"
+            }
+          }
+        },
+        "contactFlow": {
+          "text": "DirectToAgentWhisper",
+          "id": "arn:aws:connect:us-east-1:499761511710:instance/f57b95f5-bcb8-4bdf-b0c0-ee97d5da5336/contact-flow/7134d621-670d-4382-96a2-c68b66305f69"
+        },
+        "customerOrAgent": false
+      },
+      "dta-scqf-01": {
+        "position": {
+          "x": 2116,
+          "y": 407.2
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "EventHooks": {
+            "CustomerQueue": {
+              "displayName": "DirectToAgentQueue"
+            }
+          }
+        },
+        "contactFlow": {
+          "text": "DirectToAgentQueue",
+          "id": "arn:aws:connect:us-east-1:499761511710:instance/f57b95f5-bcb8-4bdf-b0c0-ee97d5da5336/contact-flow/1e803a33-2246-4020-9174-dcdb226372a6"
+        },
+        "customerOrAgent": true
+      },
+      "dta-sca-03": {
+        "position": {
+          "x": 1452,
+          "y": 620.8
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "dta-disconnect-01": {
+        "position": {
+          "x": 3292,
+          "y": 892
+        },
+        "isFriendlyName": true
+      },
+      "dta-pp-02": {
+        "position": {
+          "x": 247.2,
+          "y": 979.2
+        },
+        "isFriendlyName": true
+      },
+      "dta-cs-01": {
+        "position": {
+          "x": 1773.6,
+          "y": 461.6
+        },
+        "isFriendlyName": true
+      },
+      "dta-sca-04": {
+        "position": {
+          "x": 1451.2,
+          "y": 863.2
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "dta-cca-01": {
+        "position": {
+          "x": 246.4,
+          "y": 658.4
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "5e95bbdc-66f5-462b-bd74-df7bc3c841df",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "200"
+          },
+          {
+            "id": "96721549-5984-4a93-bf35-2da7755cb382",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "404"
+          }
+        ]
+      },
+      "dta-sca-01": {
+        "position": {
+          "x": 534.4,
+          "y": 440.8
+        },
+        "isFriendlyName": true
+      },
+      "dta-srab-01": {
+        "position": {
+          "x": 813.6,
+          "y": 540.8
+        },
+        "isFriendlyName": true
+      },
+      "dta-cca-03": {
+        "position": {
+          "x": 2112.8,
+          "y": 661.6
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "3b9d6b63-4ee0-4635-9765-ef3e710b6032",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "true"
+          }
+        ]
+      },
+      "dta-cca-02": {
+        "position": {
+          "x": 809.6,
+          "y": 301.6
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "375fc89f-a513-42cd-94c3-54d5df93862a",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "true"
+          }
+        ]
+      },
+      "dta-swq-01": {
+        "position": {
+          "x": 1166.4,
+          "y": 149.6
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "AgentId": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "dta-cca-04": {
+        "position": {
+          "x": 1454.4,
+          "y": 388
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "f9a1ed4b-7644-447d-92fb-34df0b2cb604",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "$.System.null"
+          }
+        ]
+      },
+      "dta-gqm-01": {
+        "position": {
+          "x": 1164,
+          "y": 387.2
+        },
+        "isFriendlyName": true
+      },
+      "dta-sca-02": {
+        "position": {
+          "x": 1451.2,
+          "y": 137.6
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "Attributes": {
+            "vmx3_queue_arn": {
+              "useDynamic": true
+            },
+            "vmx3_from": {
+              "useDynamic": true
+            },
+            "vmx3_lang": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicParams": [
+          "vmx3_queue_arn",
+          "vmx3_from",
+          "vmx3_lang"
+        ]
+      }
+    },
+    "Annotations": [],
+    "name": "DirectToAgent",
+    "description": "Programmatically imported by import_flows.py",
+    "type": "contactFlow",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {
+        "TextToSpeechVoice": "Stephen",
+        "TextToSpeechEngine": "Neural",
+        "TextToSpeechStyle": "None"
+      },
+      "Identifier": "dta-sv-01",
+      "Type": "UpdateContactTextToSpeechVoice",
+      "Transitions": {
+        "NextAction": "dta-sv-01-zwvSyvdKlD",
+        "Errors": [
+          {
+            "NextAction": "dta-lambda-01",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LanguageCode": "en-US"
+      },
+      "Identifier": "dta-sv-01-zwvSyvdKlD",
+      "Type": "UpdateContactData",
+      "Transitions": {
+        "NextAction": "dta-lambda-01",
+        "Errors": [
+          {
+            "NextAction": "dta-lambda-01",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:499761511710:function:teco-lambda-get-did-to-agent-map-us-east-1-staging",
+        "InvocationTimeLimitSeconds": "5",
+        "InvocationType": "SYNCHRONOUS",
+        "LambdaInvocationAttributes": {
+          "did_number": "$.SystemEndpoint.Address"
+        },
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "dta-lambda-01",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "dta-cca-01",
+        "Errors": [
+          {
+            "NextAction": "dta-cca-01",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FlowLoggingBehavior": "Enabled"
+      },
+      "Identifier": "dta-slb-01",
+      "Type": "UpdateFlowLoggingBehavior",
+      "Transitions": {
+        "NextAction": "dta-sv-01"
+      }
+    },
+    {
+      "Parameters": {
+        "FlowModuleId": "da67d03d-67d0-49ee-9a09-46af032543a5"
+      },
+      "Identifier": "dta-im-01",
+      "Type": "InvokeFlowModule",
+      "Transitions": {
+        "NextAction": "dta-disconnect-01",
+        "Errors": [
+          {
+            "NextAction": "dta-disconnect-01",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SSML": "<speak>The party you have called is unavailable.  Please try your call again later.</speak>"
+      },
+      "Identifier": "dta-pp-01",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "dta-disconnect-01",
+        "Errors": [
+          {
+            "NextAction": "dta-disconnect-01",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ThirdPartyPhoneNumber": "$.FlowAttributes.forwarding_number",
+        "ThirdPartyConnectionTimeLimitSeconds": "30",
+        "ContinueFlowExecution": "False"
+      },
+      "Identifier": "dta-ttpn-01",
+      "Type": "TransferParticipantToThirdParty",
+      "Transitions": {
+        "NextAction": "dta-disconnect-01",
+        "Errors": [
+          {
+            "NextAction": "dta-disconnect-01",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.FlowAttributes.forwarding_number"
+      },
+      "Identifier": "dta-cca-05",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "dta-ttpn-01",
+        "Conditions": [
+          {
+            "NextAction": "dta-pp-01",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "$.System.null"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "dta-ttpn-01",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "dta-ttq-01",
+      "Type": "TransferContactToQueue",
+      "Transitions": {
+        "NextAction": "dta-disconnect-01",
+        "Errors": [
+          {
+            "NextAction": "dta-cca-03",
+            "ErrorType": "QueueAtCapacity"
+          },
+          {
+            "NextAction": "dta-disconnect-01",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "AgentWhisper": "arn:aws:connect:us-east-1:499761511710:instance/f57b95f5-bcb8-4bdf-b0c0-ee97d5da5336/contact-flow/7134d621-670d-4382-96a2-c68b66305f69"
+        },
+        "EventHooksConfiguration": {
+          "AgentWhisper": {
+            "DisableExecution": "false"
+          }
+        }
+      },
+      "Identifier": "dta-swf-01",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "dta-ttq-01",
+        "Errors": [
+          {
+            "NextAction": "dta-ttq-01",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "CustomerQueue": "arn:aws:connect:us-east-1:499761511710:instance/f57b95f5-bcb8-4bdf-b0c0-ee97d5da5336/contact-flow/1e803a33-2246-4020-9174-dcdb226372a6"
+        }
+      },
+      "Identifier": "dta-scqf-01",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "dta-swf-01",
+        "Errors": [
+          {
+            "NextAction": "dta-swf-01",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "vmx3_queue_email": "$.FlowAttributes.agent_id"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "dta-sca-03",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "dta-cs-01",
+        "Errors": [
+          {
+            "NextAction": "dta-cs-01",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "dta-disconnect-01",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "SSML": "<speak>The number you dialed is not in use.  Please check the number and try again.</speak>"
+      },
+      "Identifier": "dta-pp-02",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "dta-disconnect-01",
+        "Errors": [
+          {
+            "NextAction": "dta-disconnect-01",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "MetricType": "NumberOfAgentsAvailable"
+      },
+      "Identifier": "dta-cs-01",
+      "Type": "CheckMetricData",
+      "Transitions": {
+        "NextAction": "dta-cca-03",
+        "Conditions": [
+          {
+            "NextAction": "dta-scqf-01",
+            "Condition": {
+              "Operator": "NumberGreaterThan",
+              "Operands": [
+                "0"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "dta-cca-03",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "dta-cca-03",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "vmx3_queue_email": "$.FlowAttributes.voicemail_email"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "dta-sca-04",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "dta-cs-01",
+        "Errors": [
+          {
+            "NextAction": "dta-cs-01",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.External.statusCode"
+      },
+      "Identifier": "dta-cca-01",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "dta-pp-02",
+        "Conditions": [
+          {
+            "NextAction": "dta-sca-01",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "200"
+              ]
+            }
+          },
+          {
+            "NextAction": "dta-pp-02",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "404"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "dta-pp-02",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FlowAttributes": {
+          "agent_name": {
+            "Value": "$.External.agent_name"
+          },
+          "agent_id": {
+            "Value": "$.External.agent_id"
+          },
+          "voicemail_enabled": {
+            "Value": "$.External.voicemail_enabled"
+          },
+          "voicemail_email": {
+            "Value": "$.External.voicemail_email"
+          },
+          "voicemail_greeting": {
+            "Value": "$.External.voicemail_greeting"
+          },
+          "forwarding_number": {
+            "Value": "$.External.forwarding_number"
+          },
+          "recording_enabled": {
+            "Value": "$.External.recording_enabled"
+          }
+        }
+      },
+      "Identifier": "dta-sca-01",
+      "Type": "UpdateFlowAttributes",
+      "Transitions": {
+        "NextAction": "dta-cca-02",
+        "Errors": [
+          {
+            "NextAction": "dta-cca-02",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "RecordingBehavior": {
+          "RecordedParticipants": [
+            "Agent",
+            "Customer"
+          ],
+          "ScreenRecordedParticipants": [
+            "Agent"
+          ],
+          "IVRRecordingBehavior": "Disabled"
+        }
+      },
+      "Identifier": "dta-srab-01",
+      "Type": "UpdateContactRecordingBehavior",
+      "Transitions": {
+        "NextAction": "dta-swq-01"
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.FlowAttributes.voicemail_enabled"
+      },
+      "Identifier": "dta-cca-03",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "dta-cca-05",
+        "Conditions": [
+          {
+            "NextAction": "dta-im-01",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "true"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "dta-cca-05",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.FlowAttributes.recording_enabled"
+      },
+      "Identifier": "dta-cca-02",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "dta-swq-01",
+        "Conditions": [
+          {
+            "NextAction": "dta-srab-01",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "true"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "dta-swq-01",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "AgentId": "$.FlowAttributes.agent_id"
+      },
+      "Identifier": "dta-swq-01",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "dta-gqm-01",
+        "Errors": [
+          {
+            "NextAction": "dta-cca-03",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.FlowAttributes.voicemail_email"
+      },
+      "Identifier": "dta-cca-04",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "dta-sca-04",
+        "Conditions": [
+          {
+            "NextAction": "dta-sca-03",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "$.System.null"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "dta-sca-04",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "dta-gqm-01",
+      "Type": "GetMetricData",
+      "Transitions": {
+        "NextAction": "dta-sca-02",
+        "Errors": [
+          {
+            "NextAction": "dta-sca-02",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "vmx3_mode": "email",
+          "vmx3_queue_arn": "$.Metrics.Queue.ARN",
+          "vmx3_from": "$.CustomerEndpoint.Address",
+          "vmx3_lang": "$.LanguageCode",
+          "voicemail_prompt": "$.FlowAttributes.voicemail_greeting",
+          "vmx3_queue_email": "x",
+          "vmx3_business_group_id": "agent"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "dta-sca-02",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "dta-cca-04",
+        "Errors": [
+          {
+            "NextAction": "dta-cca-04",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ]
+}

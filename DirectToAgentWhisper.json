@@ -1,0 +1,48 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "defaa5af-276e-4e29-80f5-2699b4364b0d",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": 40,
+      "y": 40
+    },
+    "ActionMetadata": {
+      "41ab74d0-96ae-4907-a939-df03fde4ba7a": {
+        "position": {
+          "x": 494.4,
+          "y": 49.6
+        }
+      },
+      "defaa5af-276e-4e29-80f5-2699b4364b0d": {
+        "position": {
+          "x": 179.2,
+          "y": 39.2
+        }
+      }
+    },
+    "Annotations": [],
+    "name": "DirectToAgentWhisper",
+    "description": "Programmatically imported by import_flows.py",
+    "type": "agentWhisper",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {},
+      "Identifier": "41ab74d0-96ae-4907-a939-df03fde4ba7a",
+      "Type": "EndFlowExecution",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "SSML": "<speak>\nIncoming call from <say-as interpret-as=\"telephone\">$.CustomerEndpoint.Address</say-as> to your direct line.\n</speak>"
+      },
+      "Identifier": "defaa5af-276e-4e29-80f5-2699b4364b0d",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "41ab74d0-96ae-4907-a939-df03fde4ba7a"
+      }
+    }
+  ]
+}
